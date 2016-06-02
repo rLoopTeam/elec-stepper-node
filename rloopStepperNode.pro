@@ -1,4 +1,4 @@
-update=Monday, April 04, 2016 'PMt' 10:42:37 PM
+update=2016-06-02 3:56:20 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/Users/rohan/Documents/rloop/Elec/elec-parts-library/rloop
+LibName30=rloop
