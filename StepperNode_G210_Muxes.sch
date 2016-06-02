@@ -1,0 +1,431 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rloopStepperNode-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7540 4850 7540 4920
+Wire Wire Line
+	6670 4850 7540 4850
+Wire Wire Line
+	7510 1920 7510 2010
+Wire Wire Line
+	6640 1930 7510 1920
+Wire Wire Line
+	7540 3650 7540 3700
+Wire Wire Line
+	6670 3650 7540 3650
+Wire Wire Line
+	6670 4950 7220 4950
+Wire Wire Line
+	6670 5050 7220 5050
+Wire Wire Line
+	6670 5350 7220 5350
+Wire Wire Line
+	6670 5250 7220 5250
+Wire Wire Line
+	5570 5250 4990 5250
+Wire Wire Line
+	5570 5150 4990 5150
+Wire Wire Line
+	5570 4950 4990 4950
+Wire Wire Line
+	5570 4850 4980 4850
+Wire Wire Line
+	6670 3750 7240 3750
+Wire Wire Line
+	6670 3850 7240 3850
+Wire Wire Line
+	6670 4050 7240 4050
+Wire Wire Line
+	6670 4150 7240 4150
+Wire Wire Line
+	5570 4050 4990 4050
+Wire Wire Line
+	5570 3950 4990 3950
+Wire Wire Line
+	5570 3750 4990 3750
+Wire Wire Line
+	4990 3650 5570 3650
+Wire Wire Line
+	6640 2430 7210 2430
+Wire Wire Line
+	6640 2330 7210 2330
+Wire Wire Line
+	6640 2130 7210 2130
+Wire Wire Line
+	6640 2030 7210 2030
+Wire Wire Line
+	5540 2330 5020 2330
+Wire Wire Line
+	5540 2230 5020 2230
+Wire Wire Line
+	5540 2030 5010 2030
+Wire Wire Line
+	5540 1930 5010 1930
+Wire Wire Line
+	5540 2530 5540 2600
+Wire Wire Line
+	5570 4250 5570 4320
+Wire Wire Line
+	5570 5450 5570 5500
+Connection ~ 6670 4530
+Wire Wire Line
+	6770 4530 6670 4530
+Wire Wire Line
+	6970 4530 7060 4530
+Wire Wire Line
+	6670 4500 6670 4750
+Wire Wire Line
+	6670 5150 7220 5150
+Wire Wire Line
+	6670 5450 7220 5450
+Wire Wire Line
+	4990 5350 5570 5350
+Wire Wire Line
+	4990 5050 5570 5050
+Connection ~ 6670 3330
+Wire Wire Line
+	6770 3330 6670 3330
+Wire Wire Line
+	6970 3330 7060 3330
+Wire Wire Line
+	6670 3300 6670 3550
+Wire Wire Line
+	6670 3950 7240 3950
+Wire Wire Line
+	6670 4250 7240 4250
+Wire Wire Line
+	4990 4150 5570 4150
+Wire Wire Line
+	4990 3850 5570 3850
+Connection ~ 6640 1610
+Wire Wire Line
+	6740 1610 6640 1610
+Wire Wire Line
+	6940 1610 7030 1610
+Wire Wire Line
+	6640 1580 6640 1830
+Wire Wire Line
+	6640 2230 7210 2230
+Wire Wire Line
+	6640 2530 7210 2530
+Wire Wire Line
+	5020 2430 5540 2430
+Wire Wire Line
+	5020 2130 5540 2130
+$Comp
+L GNDD #PWR?
+U 1 1 574FD808
+P 7540 4920
+F 0 "#PWR?" H 7540 4670 50  0001 C CNN
+F 1 "GNDD" H 7540 4770 50  0000 C CNN
+F 2 "" H 7540 4920 60  0000 C CNN
+F 3 "" H 7540 4920 60  0000 C CNN
+	1    7540 4920
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 574FD80E
+P 7510 2010
+F 0 "#PWR?" H 7510 1760 50  0001 C CNN
+F 1 "GNDD" H 7510 1860 50  0000 C CNN
+F 2 "" H 7510 2010 60  0000 C CNN
+F 3 "" H 7510 2010 60  0000 C CNN
+	1    7510 2010
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 574FD814
+P 7540 3700
+F 0 "#PWR?" H 7540 3450 50  0001 C CNN
+F 1 "GNDD" H 7540 3550 50  0000 C CNN
+F 2 "" H 7540 3700 60  0000 C CNN
+F 3 "" H 7540 3700 60  0000 C CNN
+	1    7540 3700
+	1    0    0    -1  
+$EndComp
+Text Label 6680 5050 0    50   ~ 0
+B_STEP6_STEP
+Text Label 6680 4950 0    50   ~ 0
+A_STEP6_STEP
+Text Label 6690 5350 0    50   ~ 0
+B_STEP6_DIR
+Text Label 6690 5250 0    50   ~ 0
+A_STEP6_DIR
+Text Label 5050 5250 0    50   ~ 0
+B_STEP5_STEP
+Text Label 5050 5150 0    50   ~ 0
+A_STEP5_STEP
+Text Label 5050 4950 0    50   ~ 0
+B_STEP5_DIR
+Text Label 5050 4850 0    50   ~ 0
+A_STEP5_DIR
+Text Label 6700 3850 0    50   ~ 0
+B_STEP4_STEP
+Text Label 6700 3750 0    50   ~ 0
+A_STEP4_STEP
+Text Label 6700 4150 0    50   ~ 0
+B_STEP4_DIR
+Text Label 6700 4050 0    50   ~ 0
+A_STEP4_DIR
+Text Label 5060 4050 0    50   ~ 0
+B_STEP3_STEP
+Text Label 5060 3950 0    50   ~ 0
+A_STEP3_STEP
+Text Label 5060 3750 0    50   ~ 0
+B_STEP3_DIR
+Text Label 5060 3650 0    50   ~ 0
+A_STEP3_DIR
+Text Label 6660 2130 0    50   ~ 0
+B_STEP2_STEP
+Text Label 6660 2030 0    50   ~ 0
+A_STEP2_STEP
+Text Label 6660 2430 0    50   ~ 0
+B_STEP2_DIR
+Text Label 6660 2330 0    50   ~ 0
+A_STEP2_DIR
+Text Label 5040 2330 0    50   ~ 0
+B_STEP1_STEP
+Text Label 5050 2230 0    50   ~ 0
+A_STEP1_STEP
+Text Label 5050 2030 0    50   ~ 0
+B_STEP1_DIR
+Text Label 5050 1930 0    50   ~ 0
+A_STEP1_DIR
+$Comp
+L GNDD #PWR?
+U 1 1 574FD832
+P 5570 5500
+F 0 "#PWR?" H 5570 5250 50  0001 C CNN
+F 1 "GNDD" H 5570 5350 50  0000 C CNN
+F 2 "" H 5570 5500 60  0000 C CNN
+F 3 "" H 5570 5500 60  0000 C CNN
+	1    5570 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 574FD838
+P 5570 4320
+F 0 "#PWR?" H 5570 4070 50  0001 C CNN
+F 1 "GNDD" H 5570 4170 50  0000 C CNN
+F 2 "" H 5570 4320 60  0000 C CNN
+F 3 "" H 5570 4320 60  0000 C CNN
+	1    5570 4320
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 574FD83E
+P 5540 2600
+F 0 "#PWR?" H 5540 2350 50  0001 C CNN
+F 1 "GNDD" H 5540 2450 50  0000 C CNN
+F 2 "" H 5540 2600 60  0000 C CNN
+F 3 "" H 5540 2600 60  0000 C CNN
+	1    5540 2600
+	1    0    0    -1  
+$EndComp
+Text Label 6700 5150 0    50   ~ 0
+STEP6_STEP
+Text Label 6690 5450 0    50   ~ 0
+STEP6_DIR
+$Comp
+L GNDD #PWR?
+U 1 1 574FD846
+P 7060 4530
+F 0 "#PWR?" H 7060 4280 50  0001 C CNN
+F 1 "GNDD" H 7060 4380 50  0000 C CNN
+F 2 "" H 7060 4530 60  0000 C CNN
+F 3 "" H 7060 4530 60  0000 C CNN
+	1    7060 4530
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 574FD84C
+P 6870 4530
+F 0 "C?" V 7000 4500 50  0000 L CNN
+F 1 "104" V 6760 4450 50  0000 L CNN
+F 2 "" H 6870 4530 60  0000 C CNN
+F 3 "" H 6870 4530 60  0000 C CNN
+	1    6870 4530
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 574FD853
+P 6670 4500
+F 0 "#PWR?" H 6670 4350 50  0001 C CNN
+F 1 "+5V" H 6670 4640 50  0000 C CNN
+F 2 "" H 6670 4500 60  0000 C CNN
+F 3 "" H 6670 4500 60  0000 C CNN
+	1    6670 4500
+	1    0    0    -1  
+$EndComp
+Text Label 5050 5350 0    50   ~ 0
+STEP5_STEP
+Text Label 5050 5050 0    50   ~ 0
+STEP5_DIR
+$Comp
+L 74HCT157 U?
+U 1 1 574FD85B
+P 5770 5500
+F 0 "U?" H 6120 5400 59  0000 C CNN
+F 1 "74HCT157" H 6120 6400 59  0000 C CNN
+F 2 "" H 5770 5500 197 0000 C CNN
+F 3 "" H 5770 5500 197 0000 C CNN
+	1    5770 5500
+	1    0    0    -1  
+$EndComp
+Text Label 6700 3950 0    50   ~ 0
+STEP4_STEP
+Text Label 6700 4250 0    50   ~ 0
+STEP4_DIR
+$Comp
+L GNDD #PWR?
+U 1 1 574FD864
+P 7060 3330
+F 0 "#PWR?" H 7060 3080 50  0001 C CNN
+F 1 "GNDD" H 7060 3180 50  0000 C CNN
+F 2 "" H 7060 3330 60  0000 C CNN
+F 3 "" H 7060 3330 60  0000 C CNN
+	1    7060 3330
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 574FD86A
+P 6870 3330
+F 0 "C?" V 7000 3300 50  0000 L CNN
+F 1 "104" V 6760 3250 50  0000 L CNN
+F 2 "" H 6870 3330 60  0000 C CNN
+F 3 "" H 6870 3330 60  0000 C CNN
+	1    6870 3330
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 574FD871
+P 6670 3300
+F 0 "#PWR?" H 6670 3150 50  0001 C CNN
+F 1 "+5V" H 6670 3440 50  0000 C CNN
+F 2 "" H 6670 3300 60  0000 C CNN
+F 3 "" H 6670 3300 60  0000 C CNN
+	1    6670 3300
+	1    0    0    -1  
+$EndComp
+Text Label 5060 4150 0    50   ~ 0
+STEP3_STEP
+Text Label 5060 3850 0    50   ~ 0
+STEP3_DIR
+$Comp
+L 74HCT157 U?
+U 1 1 574FD879
+P 5770 4300
+F 0 "U?" H 6120 4200 59  0000 C CNN
+F 1 "74HCT157" H 6120 5200 59  0000 C CNN
+F 2 "" H 5770 4300 197 0000 C CNN
+F 3 "" H 5770 4300 197 0000 C CNN
+	1    5770 4300
+	1    0    0    -1  
+$EndComp
+Text Label 6660 2230 0    50   ~ 0
+STEP2_STEP
+Text Label 6660 2530 0    50   ~ 0
+STEP2_DIR
+$Comp
+L GNDD #PWR?
+U 1 1 574FD882
+P 7030 1610
+F 0 "#PWR?" H 7030 1360 50  0001 C CNN
+F 1 "GNDD" H 7030 1460 50  0000 C CNN
+F 2 "" H 7030 1610 60  0000 C CNN
+F 3 "" H 7030 1610 60  0000 C CNN
+	1    7030 1610
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 574FD888
+P 6840 1610
+F 0 "C?" V 6970 1580 50  0000 L CNN
+F 1 "104" V 6730 1530 50  0000 L CNN
+F 2 "" H 6840 1610 60  0000 C CNN
+F 3 "" H 6840 1610 60  0000 C CNN
+	1    6840 1610
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 574FD88F
+P 6640 1580
+F 0 "#PWR?" H 6640 1430 50  0001 C CNN
+F 1 "+5V" H 6640 1720 50  0000 C CNN
+F 2 "" H 6640 1580 60  0000 C CNN
+F 3 "" H 6640 1580 60  0000 C CNN
+	1    6640 1580
+	1    0    0    -1  
+$EndComp
+Text Label 5050 2430 0    50   ~ 0
+STEP1_STEP
+Text Label 5050 2130 0    50   ~ 0
+STEP1_DIR
+$Comp
+L 74HCT157 U?
+U 1 1 574FD897
+P 5740 2580
+F 0 "U?" H 6090 2480 59  0000 C CNN
+F 1 "74HCT157" H 6090 3480 59  0000 C CNN
+F 2 "" H 5740 2580 197 0000 C CNN
+F 3 "" H 5740 2580 197 0000 C CNN
+	1    5740 2580
+	1    0    0    -1  
+$EndComp
+Text Notes 7100 6950 0    118  ~ 0
+rLoop - Stepper Node\nG210x Multiplexer Interface
+Text Notes 7350 7500 0    60   ~ 0
+StepperNode_G210_Muxes
+$EndSCHEMATC

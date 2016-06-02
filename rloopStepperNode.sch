@@ -28,13 +28,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:rloop
 LIBS:rloopStepperNode-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -63,5 +62,11 @@ S 2490 1150 740  440
 U 570DA2A0
 F0 "Sheet2" 50
 F1 "rLoopStepperNode2.sch" 50
+$EndSheet
+$Sheet
+S 1400 2100 750  500 
+U 574FCD6D
+F0 "Sheet574FCD6C" 60
+F1 "StepperNode_G210_Muxes.sch" 60
 $EndSheet
 $EndSCHEMATC
