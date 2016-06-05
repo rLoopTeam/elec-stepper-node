@@ -12,7 +12,6 @@ LIBS:memory
 LIBS:xilinx
 LIBS:microcontrollers
 LIBS:dsp
-LIBS:microchip
 LIBS:analog_switches
 LIBS:motorola
 LIBS:texas
@@ -34,7 +33,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 16
+Sheet 3 17
 Title "DAC Channel A"
 Date ""
 Rev "1"
@@ -168,4 +167,32 @@ Text HLabel 2500 5350 0    60   Output ~ 0
 A_AP1_THROTTLE
 Text HLabel 2500 5450 0    60   Output ~ 0
 A_AP2_THROTTLE
+Wire Wire Line
+	3900 3450 2500 3450
+Text HLabel 2500 3450 0    60   Input ~ 0
+BRAKE1_TEMP
+Wire Wire Line
+	3900 3550 2500 3550
+Text HLabel 2500 3550 0    60   Input ~ 0
+BRAKE2_TEMP
+Wire Wire Line
+	3900 3650 2500 3650
+Text HLabel 2500 3650 0    60   Input ~ 0
+GIMBAL1_TEMP
+Wire Wire Line
+	3900 3750 2500 3750
+Text HLabel 2500 3750 0    60   Input ~ 0
+GIMBAL2_TEMP
+Wire Wire Line
+	3900 3850 2500 3850
+Text HLabel 2500 3850 0    60   Input ~ 0
+GIMBAL3_TEMP
+Wire Wire Line
+	3900 3950 2500 3950
+Text HLabel 2500 3950 0    60   Input ~ 0
+GIMBAL4_TEMP
+Wire Wire Line
+	3900 5350 2500 5350
+Wire Wire Line
+	2500 5450 3900 5450
 $EndSCHEMATC

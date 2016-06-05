@@ -12,7 +12,6 @@ LIBS:memory
 LIBS:xilinx
 LIBS:microcontrollers
 LIBS:dsp
-LIBS:microchip
 LIBS:analog_switches
 LIBS:motorola
 LIBS:texas
@@ -34,7 +33,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 16
+Sheet 5 17
 Title "DAC Channel B"
 Date ""
 Rev "1"
@@ -96,4 +95,28 @@ Text HLabel 1800 5200 0    60   Output ~ 0
 B_AP1_THROTTLE
 Text HLabel 1800 5300 0    60   Output ~ 0
 B_AP2_THROTTLE
+Wire Wire Line
+	4950 5350 3550 5350
+Text HLabel 3550 5350 0    60   Input ~ 0
+BRAKE1_TEMP
+Wire Wire Line
+	4950 5450 3550 5450
+Text HLabel 3550 5450 0    60   Input ~ 0
+BRAKE2_TEMP
+Wire Wire Line
+	4950 5550 3550 5550
+Text HLabel 3550 5550 0    60   Input ~ 0
+GIMBAL1_TEMP
+Wire Wire Line
+	4950 5650 3550 5650
+Text HLabel 3550 5650 0    60   Input ~ 0
+GIMBAL2_TEMP
+Wire Wire Line
+	4950 5750 3550 5750
+Text HLabel 3550 5750 0    60   Input ~ 0
+GIMBAL3_TEMP
+Wire Wire Line
+	4950 5850 3550 5850
+Text HLabel 3550 5850 0    60   Input ~ 0
+GIMBAL4_TEMP
 $EndSCHEMATC

@@ -12,7 +12,6 @@ LIBS:memory
 LIBS:xilinx
 LIBS:microcontrollers
 LIBS:dsp
-LIBS:microchip
 LIBS:analog_switches
 LIBS:motorola
 LIBS:texas
@@ -34,7 +33,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 16 16
+Sheet 16 17
 Title "Aux Propulsion Interface"
 Date ""
 Rev "1"

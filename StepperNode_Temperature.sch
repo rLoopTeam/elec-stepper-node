@@ -33,8 +33,8 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 10 17
-Title "Gimbal 4-20ma MLP Interface"
+Sheet 17 17
+Title "Stepper Motor Temperature Interface"
 Date ""
 Rev "1"
 Comp ""
@@ -43,12 +43,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1700 1250 0    60   Output ~ 0
-GIMBAL1_MLP
-Text HLabel 1700 1350 0    60   Output ~ 0
-GIMBAL2_MLP
-Text HLabel 1700 1450 0    60   Output ~ 0
-GIMBAL3_MLP
-Text HLabel 1700 1550 0    60   Output ~ 0
-GIMBAL4_MLP
+Text HLabel 1550 1000 0    60   Output ~ 0
+BRAKE1_TEMP
+Text HLabel 1550 1100 0    60   Output ~ 0
+BRAKE2_TEMP
+Text HLabel 1550 1200 0    60   Output ~ 0
+GIMBAL1_TEMP
+Text HLabel 1550 1300 0    60   Output ~ 0
+GIMBAL2_TEMP
+Text HLabel 1550 1400 0    60   Output ~ 0
+GIMBAL3_TEMP
+Text HLabel 1550 1500 0    60   Output ~ 0
+GIMBAL4_TEMP
 $EndSCHEMATC
