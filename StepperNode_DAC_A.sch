@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 14
+Sheet 3 16
 Title "DAC Channel A"
 Date ""
 Rev "1"
@@ -164,4 +164,8 @@ Wire Wire Line
 	3900 5250 2500 5250
 Text HLabel 2450 2350 0    60   Input ~ 0
 STEP_DIR_CTRL
+Text HLabel 2500 5350 0    60   Output ~ 0
+A_AP1_THROTTLE
+Text HLabel 2500 5450 0    60   Output ~ 0
+A_AP2_THROTTLE
 $EndSCHEMATC

@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 14 14
+Sheet 14 16
 Title "Brake Failsafe Control"
 Date ""
 Rev "1"
@@ -77,5 +77,48 @@ Wire Wire Line
 Wire Wire Line
 	12000 3200 10100 3200
 Text Notes 9850 2800 0    60   ~ 0
+G210x Active when\nRelay Energized
+$Comp
+L Q_NMOS_DGS Q?
+U 1 1 5753D96E
+P 8700 4250
+F 0 "Q?" H 9000 4300 50  0000 R CNN
+F 1 "Q_NMOS_DGS" H 9350 4200 50  0000 R CNN
+F 2 "" H 8900 4350 50  0000 C CNN
+F 3 "" H 8700 4250 50  0000 C CNN
+	1    8700 4250
+	1    0    0    -1  
+$EndComp
+Text HLabel 6050 4200 0    60   Input ~ 0
+WDT_GOOD
+$Comp
+L CONN_01X02_2XMNT P?
+U 1 1 5753DAA1
+P 12200 5950
+F 0 "P?" H 12200 6100 50  0000 C CNN
+F 1 "CONN_01X02_2XMNT" V 12300 5950 50  0000 C CNN
+F 2 "" H 12200 5950 50  0000 C CNN
+F 3 "" H 12200 5950 50  0000 C CNN
+	1    12200 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 12550 5950 0    60   ~ 0
+Brake 2 G210x\nEnable Link
+$Comp
+L Relay_DPDT RL?
+U 1 1 5753DAA8
+P 9100 6450
+F 0 "RL?" H 9500 7250 60  0000 C CNN
+F 1 "Relay_DPDT" H 9500 6400 60  0000 C CNN
+F 2 "" H 9100 6450 60  0000 C CNN
+F 3 "" H 9100 6450 60  0000 C CNN
+	1    9100 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 6000 12000 6000
+Wire Wire Line
+	12000 5900 10100 5900
+Text Notes 9850 5500 0    60   ~ 0
 G210x Active when\nRelay Energized
 $EndSCHEMATC

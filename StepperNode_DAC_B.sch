@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 14
+Sheet 6 16
 Title "DAC Channel B"
 Date ""
 Rev "1"
@@ -92,4 +92,8 @@ Text HLabel 2950 3750 2    60   Output ~ 0
 CHB_DAC_NDATA_AVAIL
 Text HLabel 2950 3850 2    60   Input ~ 0
 CHB_DAC_NCNVT
+Text HLabel 1800 5200 0    60   Output ~ 0
+B_AP1_THROTTLE
+Text HLabel 1800 5300 0    60   Output ~ 0
+B_AP2_THROTTLE
 $EndSCHEMATC

@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 9 14
+Sheet 9 16
 Title "Stepper Node - Core A"
 Date ""
 Rev "1"
@@ -99,4 +99,24 @@ Text HLabel 1450 7200 2    60   Output ~ 0
 CHA_STEP6_STEP
 Text HLabel 2250 7500 0    60   Output ~ 0
 CHA_WDT_PULSE
+Text HLabel 2900 5250 2    60   Input ~ 0
+CHA_IB_FL_NIRQ
+Text HLabel 2900 5350 2    60   Input ~ 0
+CHA_IB_RL_NIRQ
+Text HLabel 2900 5450 2    60   Input ~ 0
+CHA_IB_FR_NIRQ
+Text HLabel 2900 5700 2    60   Output ~ 0
+CHA_IB_RL_NCS
+Text HLabel 2900 5800 2    60   Output ~ 0
+CHA_IB_FR_NCS
+Text HLabel 2900 5600 2    60   Output ~ 0
+CHA_IB_FL_NCS
+Text HLabel 2900 4900 2    60   Output ~ 0
+CHA_SPI_MOSI
+Text HLabel 2900 5000 2    60   Input ~ 0
+CHA_SPI_MISO
+Text HLabel 2900 5100 2    60   Output ~ 0
+CHA_SPI_SCK
+Text HLabel 2300 7700 0    60   Output ~ 0
+CHA_AUXPROP_DIR
 $EndSCHEMATC

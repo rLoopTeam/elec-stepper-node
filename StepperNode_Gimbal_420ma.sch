@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 10 14
+Sheet 10 16
 Title "Gimbal 4-20ma MLP Interface"
 Date ""
 Rev "1"

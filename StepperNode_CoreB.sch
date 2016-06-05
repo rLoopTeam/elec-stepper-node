@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 14
+Sheet 8 16
 Title ""
 Date ""
 Rev "1"
@@ -84,4 +84,24 @@ Text HLabel 1300 4050 2    60   Output ~ 0
 CHB_STEP6_STEP
 Text HLabel 2050 4300 0    60   Output ~ 0
 CHB_WDT_PULSE
+Text HLabel 1300 5150 2    60   Input ~ 0
+CHB_IB_FL_NIRQ
+Text HLabel 1300 5250 2    60   Input ~ 0
+CHB_IB_RL_NIRQ
+Text HLabel 1300 5350 2    60   Input ~ 0
+CHB_IB_FR_NIRQ
+Text HLabel 1300 5600 2    60   Output ~ 0
+CHB_IB_RL_NCS
+Text HLabel 1300 5700 2    60   Output ~ 0
+CHB_IB_FR_NCS
+Text HLabel 1300 5500 2    60   Output ~ 0
+CHB_IB_FL_NCS
+Text HLabel 1300 4800 2    60   Output ~ 0
+CHB_SPI_MOSI
+Text HLabel 1300 4900 2    60   Input ~ 0
+CHB_SPI_MISO
+Text HLabel 1300 5000 2    60   Output ~ 0
+CHB_SPI_SCK
+Text HLabel 2100 5900 0    60   Output ~ 0
+CHB_AUXPROP_DIR
 $EndSCHEMATC
