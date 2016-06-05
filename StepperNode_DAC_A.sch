@@ -34,8 +34,8 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 8
-Title "I2C DACS and ADC's"
+Sheet 6 9
+Title "DAC Channel A"
 Date ""
 Rev "1"
 Comp ""
@@ -45,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 11900 10350 0    118  ~ 0
-rLoop - Stepper Node\nI2C DAC's and ADC's\n
+rLoop - Stepper Node\nDAC Channel A\n
 Text Notes 11950 10500 0    60   ~ 0
 Original Author: SafetyLok
 $Comp
@@ -162,4 +162,6 @@ Text HLabel 2500 5250 0    60   Output ~ 0
 A_HE8_THROTTLE
 Wire Wire Line
 	3900 5250 2500 5250
+Text HLabel 2450 2350 0    60   Input ~ 0
+STEP_DIR_CTRL
 $EndSCHEMATC

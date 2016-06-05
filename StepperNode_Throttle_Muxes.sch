@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 9 8
+Sheet 8 9
 Title "Throttle Multiplexers"
 Date ""
 Rev "1"
@@ -224,4 +224,6 @@ Text Label 10300 6150 0    60   ~ 0
 HE8_THROTTLE
 Text Notes 11750 6600 1    60   ~ 0
 Screened Cable with screen\nconnected to GND on PCB side\n1 Per RHS HE
+Text HLabel 5650 1550 0    60   Input ~ 0
+STEP_DIR_CTRL
 $EndSCHEMATC

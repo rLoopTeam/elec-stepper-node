@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 8
+Sheet 4 9
 Title "G210 Multiplexers"
 Date ""
 Rev "1"
@@ -525,4 +525,6 @@ F 3 "" H 3400 5450 50  0000 C CNN
 	1    3400 5450
 	1    0    0    -1  
 $EndComp
+Text HLabel 1500 1600 0    60   Input ~ 0
+STEP_DIR_CTRL
 $EndSCHEMATC
