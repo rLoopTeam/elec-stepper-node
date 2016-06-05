@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 9
+Sheet 4 11
 Title "G210 Multiplexers"
 Date ""
 Rev "1"
