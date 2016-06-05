@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 11 12
+Sheet 8 13
 Title ""
 Date ""
 Rev "1"
@@ -82,4 +82,6 @@ Text HLabel 1300 3950 2    60   Output ~ 0
 CHB_STEP6_DIR
 Text HLabel 1300 4050 2    60   Output ~ 0
 CHB_STEP6_STEP
+Text HLabel 2050 4300 0    60   Output ~ 0
+CHB_WDT_PULSE
 $EndSCHEMATC
