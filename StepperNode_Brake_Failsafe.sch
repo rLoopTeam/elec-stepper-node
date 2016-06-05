@@ -121,4 +121,8 @@ Wire Wire Line
 	12000 5900 10100 5900
 Text Notes 9850 5500 0    60   ~ 0
 G210x Active when\nRelay Energized
+Text HLabel 5550 5100 0    60   Input ~ 0
+PUSH_INTLK_A
+Text HLabel 5550 5200 0    60   Input ~ 0
+PUSH_INTLK_B
 $EndSCHEMATC

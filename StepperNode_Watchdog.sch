@@ -133,4 +133,6 @@ Text Label 8150 2850 0    60   ~ 0
 WDT_GOOD
 Text Notes 8300 3100 0    60   ~ 0
 Active High when\nBoth watchdogs are good
+Text Notes 3800 4300 0    60   ~ 0
+Todo:\nJumper Pin to simulate failures.
 $EndSCHEMATC

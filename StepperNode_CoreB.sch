@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 16
+Sheet 7 16
 Title ""
 Date ""
 Rev "1"
@@ -104,4 +104,12 @@ Text HLabel 1300 5000 2    60   Output ~ 0
 CHB_SPI_SCK
 Text HLabel 2100 5900 0    60   Output ~ 0
 CHB_AUXPROP_DIR
+Text HLabel 1950 6150 0    60   Input ~ 0
+PUSH_INTLK_A
+Text HLabel 1950 6250 0    60   Input ~ 0
+PUSH_INTLK_B
+Text HLabel 1250 6550 2    60   Input ~ 0
+CHB_ACCEL1_NINT
+Text HLabel 1250 6650 2    60   Input ~ 0
+CHB_ACCEL2_NINT
 $EndSCHEMATC
