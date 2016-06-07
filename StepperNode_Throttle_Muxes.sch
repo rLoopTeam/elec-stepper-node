@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 17
+Sheet 4 17
 Title "Throttle Multiplexers"
 Date ""
 Rev "1"
@@ -61,35 +61,35 @@ Text Notes 11950 10500 0    60   ~ 0
 Original Author: SafetyLok
 Wire Wire Line
 	6500 2200 5750 2200
-Text HLabel 5750 2200 0    60   Input ~ 0
+Text HLabel 5750 2300 0    60   Input ~ 0
 A_HE1_THROTTLE
 Wire Wire Line
 	6500 2300 5750 2300
-Text HLabel 5750 2300 0    60   Input ~ 0
+Text HLabel 5750 2200 0    60   Input ~ 0
 B_HE1_THROTTLE
 Wire Wire Line
 	6500 2450 5750 2450
-Text HLabel 5750 2450 0    60   Input ~ 0
+Text HLabel 5750 2550 0    60   Input ~ 0
 A_HE2_THROTTLE
 Wire Wire Line
 	6500 2550 5750 2550
-Text HLabel 5750 2550 0    60   Input ~ 0
+Text HLabel 5750 2450 0    60   Input ~ 0
 B_HE2_THROTTLE
 Wire Wire Line
 	6500 2700 5750 2700
-Text HLabel 5750 2700 0    60   Input ~ 0
+Text HLabel 5750 2800 0    60   Input ~ 0
 A_HE3_THROTTLE
 Wire Wire Line
 	6500 2800 5750 2800
-Text HLabel 5750 2800 0    60   Input ~ 0
+Text HLabel 5750 2700 0    60   Input ~ 0
 B_HE3_THROTTLE
 Wire Wire Line
 	6500 2950 5750 2950
-Text HLabel 5750 2950 0    60   Input ~ 0
+Text HLabel 5750 3050 0    60   Input ~ 0
 A_HE4_THROTTLE
 Wire Wire Line
 	6500 3050 5750 3050
-Text HLabel 5750 3050 0    60   Input ~ 0
+Text HLabel 5750 2950 0    60   Input ~ 0
 B_HE4_THROTTLE
 Wire Wire Line
 	7800 2250 8800 2250
@@ -149,35 +149,35 @@ F 3 "" H 6700 8100 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	6500 5700 5750 5700
-Text HLabel 5750 5700 0    60   Input ~ 0
+Text HLabel 5750 5800 0    60   Input ~ 0
 A_HE5_THROTTLE
 Wire Wire Line
 	6500 5800 5750 5800
-Text HLabel 5750 5800 0    60   Input ~ 0
+Text HLabel 5750 5700 0    60   Input ~ 0
 B_HE5_THROTTLE
 Wire Wire Line
 	6500 5950 5750 5950
-Text HLabel 5750 5950 0    60   Input ~ 0
+Text HLabel 5750 6050 0    60   Input ~ 0
 A_HE6_THROTTLE
 Wire Wire Line
 	6500 6050 5750 6050
-Text HLabel 5750 6050 0    60   Input ~ 0
+Text HLabel 5750 5950 0    60   Input ~ 0
 B_HE6_THROTTLE
 Wire Wire Line
 	6500 6200 5750 6200
-Text HLabel 5750 6200 0    60   Input ~ 0
+Text HLabel 5750 6300 0    60   Input ~ 0
 A_HE7_THROTTLE
 Wire Wire Line
 	6500 6300 5750 6300
-Text HLabel 5750 6300 0    60   Input ~ 0
+Text HLabel 5750 6200 0    60   Input ~ 0
 B_HE7_THROTTLE
 Wire Wire Line
 	6500 6450 5750 6450
-Text HLabel 5750 6450 0    60   Input ~ 0
+Text HLabel 5750 6550 0    60   Input ~ 0
 A_HE8_THROTTLE
 Wire Wire Line
 	6500 6550 5750 6550
-Text HLabel 5750 6550 0    60   Input ~ 0
+Text HLabel 5750 6450 0    60   Input ~ 0
 B_HE8_THROTTLE
 Wire Wire Line
 	7800 5750 8800 5750
@@ -224,6 +224,180 @@ Text Label 10300 6150 0    60   ~ 0
 HE8_THROTTLE
 Text Notes 11750 6600 1    60   ~ 0
 Screened Cable with screen\nconnected to GND on PCB side\n1 Per RHS HE
-Text HLabel 5650 1550 0    60   Input ~ 0
+Text HLabel 6150 1500 0    60   Input ~ 0
 STEP_DIR_CTRL
+$Comp
+L +5VA #PWR?
+U 1 1 57569503
+P 7250 1850
+F 0 "#PWR?" H 7250 1700 50  0001 C CNN
+F 1 "+5VA" H 7250 1990 50  0000 C CNN
+F 2 "" H 7250 1850 50  0000 C CNN
+F 3 "" H 7250 1850 50  0000 C CNN
+	1    7250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57569509
+P 7650 1300
+F 0 "C?" H 7675 1400 50  0000 L CNN
+F 1 "0.1UF" H 7675 1200 50  0000 L CNN
+F 2 "" H 7688 1150 50  0000 C CNN
+F 3 "" H 7650 1300 50  0000 C CNN
+	1    7650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 57569510
+P 7650 1150
+F 0 "#PWR?" H 7650 1000 50  0001 C CNN
+F 1 "+5VA" H 7650 1290 50  0000 C CNN
+F 2 "" H 7650 1150 50  0000 C CNN
+F 3 "" H 7650 1150 50  0000 C CNN
+	1    7650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 57569516
+P 7050 1850
+F 0 "#PWR?" H 7050 1600 50  0001 C CNN
+F 1 "GNDD" H 7050 1700 50  0000 C CNN
+F 2 "" H 7050 1850 50  0000 C CNN
+F 3 "" H 7050 1850 50  0000 C CNN
+	1    7050 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 1850 7150 1500
+Wire Wire Line
+	7150 1500 6150 1500
+Text Notes 5400 1400 0    60   ~ 0
+High = CHA
+$Comp
+L GNDA #PWR?
+U 1 1 5756951F
+P 7650 1450
+F 0 "#PWR?" H 7650 1200 50  0001 C CNN
+F 1 "GNDA" H 7650 1300 50  0000 C CNN
+F 2 "" H 7650 1450 50  0000 C CNN
+F 3 "" H 7650 1450 50  0000 C CNN
+	1    7650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 57569690
+P 7250 5350
+F 0 "#PWR?" H 7250 5200 50  0001 C CNN
+F 1 "+5VA" H 7250 5490 50  0000 C CNN
+F 2 "" H 7250 5350 50  0000 C CNN
+F 3 "" H 7250 5350 50  0000 C CNN
+	1    7250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57569696
+P 7650 4800
+F 0 "C?" H 7675 4900 50  0000 L CNN
+F 1 "0.1UF" H 7675 4700 50  0000 L CNN
+F 2 "" H 7688 4650 50  0000 C CNN
+F 3 "" H 7650 4800 50  0000 C CNN
+	1    7650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 5756969D
+P 7650 4650
+F 0 "#PWR?" H 7650 4500 50  0001 C CNN
+F 1 "+5VA" H 7650 4790 50  0000 C CNN
+F 2 "" H 7650 4650 50  0000 C CNN
+F 3 "" H 7650 4650 50  0000 C CNN
+	1    7650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 575696A3
+P 7050 5350
+F 0 "#PWR?" H 7050 5100 50  0001 C CNN
+F 1 "GNDD" H 7050 5200 50  0000 C CNN
+F 2 "" H 7050 5350 50  0000 C CNN
+F 3 "" H 7050 5350 50  0000 C CNN
+	1    7050 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 5350 7150 5000
+Wire Wire Line
+	7150 5000 6150 5000
+Text Notes 5400 4900 0    60   ~ 0
+High = CHA
+$Comp
+L GNDA #PWR?
+U 1 1 575696AC
+P 7650 4950
+F 0 "#PWR?" H 7650 4700 50  0001 C CNN
+F 1 "GNDA" H 7650 4800 50  0000 C CNN
+F 2 "" H 7650 4950 50  0000 C CNN
+F 3 "" H 7650 4950 50  0000 C CNN
+	1    7650 4950
+	1    0    0    -1  
+$EndComp
+Text Label 6350 1500 0    60   ~ 0
+STEP_DIR_CTRL
+Text Label 6250 5000 0    60   ~ 0
+STEP_DIR_CTRL
+$Comp
+L GNDA #PWR?
+U 1 1 57569B4E
+P 7200 7700
+F 0 "#PWR?" H 7200 7450 50  0001 C CNN
+F 1 "GNDA" H 7200 7550 50  0000 C CNN
+F 2 "" H 7200 7700 50  0000 C CNN
+F 3 "" H 7200 7700 50  0000 C CNN
+	1    7200 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6700 6500 7700
+Wire Wire Line
+	6500 7700 7200 7700
+Wire Wire Line
+	7000 7550 7000 7700
+Connection ~ 7000 7700
+Wire Wire Line
+	7100 7550 7100 7700
+Connection ~ 7100 7700
+Wire Wire Line
+	7200 7700 7200 7550
+$Comp
+L GNDA #PWR?
+U 1 1 57569C1E
+P 7200 4200
+F 0 "#PWR?" H 7200 3950 50  0001 C CNN
+F 1 "GNDA" H 7200 4050 50  0000 C CNN
+F 2 "" H 7200 4200 50  0000 C CNN
+F 3 "" H 7200 4200 50  0000 C CNN
+	1    7200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4200 6500 4200
+Wire Wire Line
+	6500 4200 6500 3200
+Wire Wire Line
+	7200 4050 7200 4200
+Wire Wire Line
+	7100 4050 7100 4200
+Connection ~ 7100 4200
+Wire Wire Line
+	7000 4050 7000 4200
+Connection ~ 7000 4200
+Text Notes 13100 1300 0    60   ~ 0
+Notes on HE throttle interface:\n1. We need to maintain electrical isolation (GND/SIG)\n2. We need to supply +12V (Fused) for the electronics to run\n3. We need RS485 comms\n4. Fwd/Rev? How? - Swap Phase A and C or set motor features to 0x01 to swap\n
 $EndSCHEMATC
