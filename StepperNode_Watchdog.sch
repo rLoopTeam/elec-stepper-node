@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 13 17
+Sheet 12 17
 Title "Watchdog"
 Date ""
 Rev "1"
@@ -44,95 +44,98 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6250 2200 2    60   Output ~ 0
+Text HLabel 8700 3900 2    60   Output ~ 0
 STEP_DIR_CTRL
 Text Notes 11900 10350 0    118  ~ 0
 rLoop - Stepper Node\nMux Priority Watchdog System\n
 Text Notes 11950 10500 0    60   ~ 0
 Original Author: SafetyLok
-Text HLabel 4150 2200 0    60   Input ~ 0
+Text HLabel 6100 4500 0    60   Input ~ 0
 CHA_WDT_PULSE
-Text HLabel 4150 3400 0    60   Input ~ 0
+Text HLabel 6100 5700 0    60   Input ~ 0
 CHB_WDT_PULSE
 $Comp
 L TPS3813 U?
 U 1 1 5754A913
-P 4350 2600
-F 0 "U?" H 4550 2550 50  0000 C CNN
-F 1 "TPS3813" H 4600 3150 50  0000 C CNN
-F 2 "" H 4350 2600 50  0000 C CNN
-F 3 "" H 4350 2600 50  0000 C CNN
-	1    4350 2600
+P 6300 4900
+F 0 "U?" H 6500 4850 50  0000 C CNN
+F 1 "TPS3813" H 6550 5450 50  0000 C CNN
+F 2 "" H 6300 4900 50  0000 C CNN
+F 3 "" H 6300 4900 50  0000 C CNN
+	1    6300 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L TPS3813 U?
 U 1 1 5754A98A
-P 4350 3800
-F 0 "U?" H 4550 3750 50  0000 C CNN
-F 1 "TPS3813" H 4600 4350 50  0000 C CNN
-F 2 "" H 4350 3800 50  0000 C CNN
-F 3 "" H 4350 3800 50  0000 C CNN
-	1    4350 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74LS32 U?
-U 1 1 5754AB6D
-P 7050 2850
-F 0 "U?" H 7050 2900 50  0000 C CNN
-F 1 "74LS32" H 7050 2800 50  0000 C CNN
-F 2 "" H 7050 2850 50  0000 C CNN
-F 3 "" H 7050 2850 50  0000 C CNN
-	1    7050 2850
+P 6300 6100
+F 0 "U?" H 6500 6050 50  0000 C CNN
+F 1 "TPS3813" H 6550 6650 50  0000 C CNN
+F 2 "" H 6300 6100 50  0000 C CNN
+F 3 "" H 6300 6100 50  0000 C CNN
+	1    6300 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 2200 6250 2200
+	7000 4500 8200 4500
 Wire Wire Line
-	6250 2200 6250 2750
+	8200 3900 8200 5050
 Wire Wire Line
-	6250 2750 6450 2750
+	8200 5050 8400 5050
 Wire Wire Line
-	5000 3400 6250 3400
+	6950 5700 8200 5700
 Wire Wire Line
-	6250 3400 6250 2950
+	8200 5700 8200 5250
 Wire Wire Line
-	6250 2950 6450 2950
-Text Notes 7400 1760 2    60   ~ 0
+	8200 5250 8400 5250
+Text Notes 6950 3910 2    60   ~ 0
 During normal operation, both outputs\nare logic high.\nChannel A determines priority
 $Comp
 L R R?
 U 1 1 5754AC39
-P 5350 2050
-F 0 "R?" V 5430 2050 50  0000 C CNN
-F 1 "10K" V 5350 2050 50  0000 C CNN
-F 2 "" V 5280 2050 50  0000 C CNN
-F 3 "" H 5350 2050 50  0000 C CNN
-	1    5350 2050
+P 7300 4350
+F 0 "R?" V 7380 4350 50  0000 C CNN
+F 1 "10K" V 7300 4350 50  0000 C CNN
+F 2 "" V 7230 4350 50  0000 C CNN
+F 3 "" H 7300 4350 50  0000 C CNN
+	1    7300 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 5754ACDE
-P 5400 3250
-F 0 "R?" V 5480 3250 50  0000 C CNN
-F 1 "10K" V 5400 3250 50  0000 C CNN
-F 2 "" V 5330 3250 50  0000 C CNN
-F 3 "" H 5400 3250 50  0000 C CNN
-	1    5400 3250
+P 7350 5550
+F 0 "R?" V 7430 5550 50  0000 C CNN
+F 1 "10K" V 7350 5550 50  0000 C CNN
+F 2 "" V 7280 5550 50  0000 C CNN
+F 3 "" H 7350 5550 50  0000 C CNN
+	1    7350 5550
 	1    0    0    -1  
 $EndComp
-Text Label 5550 2200 0    60   ~ 0
+Text Label 7500 4500 0    60   ~ 0
 STEP_DIR_CTRL
 Wire Wire Line
-	7650 2850 8900 2850
-Text HLabel 8900 2850 2    60   Output ~ 0
+	9350 5150 10600 5150
+Text HLabel 10600 5150 2    60   Output ~ 0
 WDT_GOOD
-Text Label 8150 2850 0    60   ~ 0
+Text Label 9850 5150 0    60   ~ 0
 WDT_GOOD
-Text Notes 8300 3100 0    60   ~ 0
+Text Notes 10000 5400 0    60   ~ 0
 Active High when\nBoth watchdogs are good
-Text Notes 3800 4300 0    60   ~ 0
+Text Notes 5750 6600 0    60   ~ 0
 Todo:\nJumper Pin to simulate failures.
+$Comp
+L 74LVC1G32GW,125 U?
+U 1 1 575DE6F6
+P 8600 4900
+F 0 "U?" H 8600 5050 60  0000 C CNN
+F 1 "74LVC1G32GW,125" H 9400 4250 60  0000 C CNN
+F 2 "" H 8600 4900 60  0000 C CNN
+F 3 "" H 8600 4900 60  0000 C CNN
+	1    8600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3900 8200 3900
+Connection ~ 8200 4500
 $EndSCHEMATC

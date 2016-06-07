@@ -241,8 +241,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 3700 7950 3700
 Wire Wire Line
-	7150 3800 7950 3800
-Wire Wire Line
 	7150 3900 7950 3900
 Wire Wire Line
 	7150 4000 7950 4000
@@ -284,26 +282,12 @@ F 3 "" H 6050 4000 50  0000 C CNN
 	1    6050 4000
 	0    1    1    0   
 $EndComp
-Text Label 7200 3500 0    60   ~ 0
-CHA_STEP2_STEP
-Text Label 7200 3600 0    60   ~ 0
-CHB_STEP2_STEP
 Text Label 7200 3700 0    60   ~ 0
 STEP2_STEP
-Text Label 7200 3800 0    60   ~ 0
-CHA_STEP2_DIR
-Text Label 7200 3900 0    60   ~ 0
-CHB_STEP2_DIR
 Text Label 7200 4000 0    60   ~ 0
 STEP2_DIR
-Text Label 5350 3500 0    60   ~ 0
-CHB_STEP1_DIR
 Text Label 5350 3600 0    60   ~ 0
 STEP1_DIR
-Text Label 5350 3700 0    60   ~ 0
-CHA_STEP1_STEP
-Text Label 5350 3800 0    60   ~ 0
-CHB_STEP1_STEP
 Text Label 5350 3900 0    60   ~ 0
 STEP1_STEP
 Text Label 5350 3300 0    60   ~ 0
@@ -384,28 +368,10 @@ F 3 "" H 6050 5800 50  0000 C CNN
 	1    6050 5800
 	0    1    1    0   
 $EndComp
-Text Label 7200 5300 0    60   ~ 0
-CHA_STEP4_STEP
-Text Label 7200 5400 0    60   ~ 0
-CHB_STEP4_STEP
-Text Label 7200 5500 0    60   ~ 0
-STEP4_STEP
-Text Label 7200 5600 0    60   ~ 0
-CHA_STEP4_DIR
-Text Label 7200 5700 0    60   ~ 0
-CHB_STEP4_DIR
 Text Label 7200 5800 0    60   ~ 0
 STEP4_DIR
-Text Label 5350 5200 0    60   ~ 0
-CHA_STEP3_DIR
-Text Label 5350 5300 0    60   ~ 0
-CHB_STEP3_DIR
 Text Label 5350 5400 0    60   ~ 0
 STEP3_DIR
-Text Label 5350 5500 0    60   ~ 0
-CHA_STEP3_STEP
-Text Label 5350 5600 0    60   ~ 0
-CHB_STEP3_STEP
 Text Label 5350 5700 0    60   ~ 0
 STEP3_STEP
 Text Label 5350 5100 0    60   ~ 0
@@ -486,28 +452,12 @@ F 3 "" H 5850 8050 50  0000 C CNN
 	1    5850 8050
 	0    1    1    0   
 $EndComp
-Text Label 7000 7550 0    60   ~ 0
-CHA_STEP6_STEP
-Text Label 7000 7650 0    60   ~ 0
-CHB_STEP6_STEP
 Text Label 7000 7750 0    60   ~ 0
 STEP6_STEP
-Text Label 7000 7850 0    60   ~ 0
-CHA_STEP6_DIR
-Text Label 7000 7950 0    60   ~ 0
-CHB_STEP6_DIR
 Text Label 7000 8050 0    60   ~ 0
 STEP6_DIR
-Text Label 5150 7450 0    60   ~ 0
-CHA_STEP5_DIR
-Text Label 5150 7550 0    60   ~ 0
-CHB_STEP5_DIR
 Text Label 5150 7650 0    60   ~ 0
 STEP5_DIR
-Text Label 5150 7750 0    60   ~ 0
-CHA_STEP5_STEP
-Text Label 5150 7850 0    60   ~ 0
-CHB_STEP5_STEP
 Text Label 5150 7950 0    60   ~ 0
 STEP5_STEP
 Text Label 5150 7350 0    60   ~ 0
@@ -525,54 +475,58 @@ F 3 "" H 7050 7150 50  0000 C CNN
 $EndComp
 Text HLabel 5150 3300 0    60   Input ~ 0
 STEP_DIR_CTRL
-Text HLabel 5150 3400 0    60   Input ~ 0
-CHA_STEP1_DIR
-Text HLabel 5150 3700 0    60   Input ~ 0
-CHA_STEP1_STEP
-Text HLabel 7950 3900 2    60   Input ~ 0
-CHB_STEP2_DIR
-Text HLabel 7950 3500 2    60   Input ~ 0
-CHA_STEP2_STEP
-Text Label 5350 3400 0    60   ~ 0
-CHA_STEP_DIR
 Text HLabel 5150 3500 0    60   Input ~ 0
-CHB_STEP1_DIR
+CHA_STEP1_DIR
 Text HLabel 5150 3800 0    60   Input ~ 0
-CHB_STEP1_STEP
+CHA_STEP1_STEP
 Text HLabel 7950 3800 2    60   Input ~ 0
-CHA_STEP2_DIR
+CHB_STEP2_DIR
 Text HLabel 7950 3600 2    60   Input ~ 0
+CHA_STEP2_STEP
+Text HLabel 5150 3400 0    60   Input ~ 0
+CHB_STEP1_DIR
+Text HLabel 5150 3700 0    60   Input ~ 0
+CHB_STEP1_STEP
+Text HLabel 7950 3900 2    60   Input ~ 0
+CHA_STEP2_DIR
+Text HLabel 7950 3500 2    60   Input ~ 0
 CHB_STEP2_STEP
-Text HLabel 5150 5200 0    60   Input ~ 0
-CHA_STEP3_DIR
-Text HLabel 5150 5500 0    60   Input ~ 0
-CHA_STEP3_STEP
 Text HLabel 5150 5300 0    60   Input ~ 0
-CHB_STEP3_DIR
+CHA_STEP3_DIR
 Text HLabel 5150 5600 0    60   Input ~ 0
+CHA_STEP3_STEP
+Text HLabel 5150 5200 0    60   Input ~ 0
+CHB_STEP3_DIR
+Text HLabel 5150 5500 0    60   Input ~ 0
 CHB_STEP3_STEP
-Text HLabel 7950 5700 2    60   Input ~ 0
-CHB_STEP4_DIR
-Text HLabel 7950 5300 2    60   Input ~ 0
-CHA_STEP4_STEP
 Text HLabel 7950 5600 2    60   Input ~ 0
-CHA_STEP4_DIR
+CHB_STEP4_DIR
 Text HLabel 7950 5400 2    60   Input ~ 0
+CHA_STEP4_STEP
+Text HLabel 7950 5700 2    60   Input ~ 0
+CHA_STEP4_DIR
+Text HLabel 7950 5300 2    60   Input ~ 0
 CHB_STEP4_STEP
-Text HLabel 4950 7450 0    60   Input ~ 0
-CHA_STEP5_DIR
-Text HLabel 4950 7750 0    60   Input ~ 0
-CHA_STEP5_STEP
 Text HLabel 4950 7550 0    60   Input ~ 0
-CHB_STEP5_DIR
+CHA_STEP5_DIR
 Text HLabel 4950 7850 0    60   Input ~ 0
+CHA_STEP5_STEP
+Text HLabel 4950 7450 0    60   Input ~ 0
+CHB_STEP5_DIR
+Text HLabel 4950 7750 0    60   Input ~ 0
 CHB_STEP5_STEP
-Text HLabel 7750 7950 2    60   Input ~ 0
-CHB_STEP6_DIR
-Text HLabel 7750 7550 2    60   Input ~ 0
-CHA_STEP6_STEP
 Text HLabel 7750 7850 2    60   Input ~ 0
-CHA_STEP6_DIR
+CHB_STEP6_DIR
 Text HLabel 7750 7650 2    60   Input ~ 0
+CHA_STEP6_STEP
+Text HLabel 7750 7950 2    60   Input ~ 0
+CHA_STEP6_DIR
+Text HLabel 7750 7550 2    60   Input ~ 0
 CHB_STEP6_STEP
+Text Notes 4350 2650 0    60   ~ 0
+Direction High = B-Y
+Wire Wire Line
+	7150 3800 7950 3800
+Text Label 7200 5500 0    60   ~ 0
+STEP4_STEP
 $EndSCHEMATC
