@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:rloopStepperNode-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,80 +44,493 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1800 2450 0    60   Output ~ 0
+Text HLabel 5550 4250 0    60   Output ~ 0
 BRAKE1_MLP
-Text HLabel 1800 2550 0    60   Output ~ 0
+Text HLabel 5550 4350 0    60   Output ~ 0
 BRAKE2_MLP
-Text HLabel 1800 2650 0    60   Input ~ 0
+Text HLabel 5550 4450 0    60   Input ~ 0
 GIMBAL1_MLP
-Text HLabel 1800 2750 0    60   Input ~ 0
+Text HLabel 5550 4550 0    60   Input ~ 0
 GIMBAL2_MLP
-Text HLabel 1800 2850 0    60   Input ~ 0
+Text HLabel 5550 4650 0    60   Input ~ 0
 GIMBAL3_MLP
-Text HLabel 1800 2950 0    60   Input ~ 0
+Text HLabel 5550 4750 0    60   Input ~ 0
 GIMBAL4_MLP
-Text HLabel 1800 4150 0    60   Output ~ 0
+Text HLabel 5550 5950 0    60   Output ~ 0
 B_HE1_THROTTLE
-Text HLabel 1800 4250 0    60   Output ~ 0
+Text HLabel 5550 6050 0    60   Output ~ 0
 B_HE2_THROTTLE
-Text HLabel 1800 4350 0    60   Output ~ 0
+Text HLabel 5550 6150 0    60   Output ~ 0
 B_HE3_THROTTLE
-Text HLabel 1800 4450 0    60   Output ~ 0
+Text HLabel 5550 6250 0    60   Output ~ 0
 B_HE4_THROTTLE
-Text HLabel 1800 4550 0    60   Output ~ 0
+Text HLabel 5550 6350 0    60   Output ~ 0
 B_HE5_THROTTLE
-Text HLabel 1800 4650 0    60   Output ~ 0
+Text HLabel 5550 6450 0    60   Output ~ 0
 B_HE6_THROTTLE
-Text HLabel 1800 4750 0    60   Output ~ 0
+Text HLabel 5550 6550 0    60   Output ~ 0
 B_HE7_THROTTLE
-Text HLabel 1800 4850 0    60   Output ~ 0
+Text HLabel 5550 6650 0    60   Output ~ 0
 B_HE8_THROTTLE
-Text HLabel 1750 1950 0    60   Input ~ 0
-STEP_DIR_CTRL
 Text Notes 11850 10350 0    118  ~ 0
 rLoop - Stepper Node\nDAC Channel B\n
 Text Notes 11900 10500 0    60   ~ 0
 Original Author: SafetyLok
-Text HLabel 2950 4700 2    60   BiDi ~ 0
+Text HLabel 10750 5050 2    60   BiDi ~ 0
 CHB_I2C_SDA
-Text HLabel 2950 4800 2    60   Input ~ 0
+Text HLabel 10750 5150 2    60   Input ~ 0
 CHB_I2C_SCL
-Text HLabel 2950 3350 2    60   Input ~ 0
+Text HLabel 10750 3700 2    60   Input ~ 0
 CHB_NDSC_CLR_0
-Text HLabel 2950 3450 2    60   Input ~ 0
+Text HLabel 10750 3800 2    60   Input ~ 0
 CHB_NDAC_CLR_1
-Text HLabel 2950 3650 2    60   Input ~ 0
+Text HLabel 10750 4000 2    60   Input ~ 0
 CHB_DAC_NRST
-Text HLabel 2950 3750 2    60   Output ~ 0
+Text HLabel 10750 4100 2    60   Output ~ 0
 CHB_DAC_NDATA_AVAIL
-Text HLabel 2950 3850 2    60   Input ~ 0
+Text HLabel 10750 4200 2    60   Input ~ 0
 CHB_DAC_NCNVT
-Text HLabel 1800 5200 0    60   Output ~ 0
+Text HLabel 5550 6750 0    60   Output ~ 0
 B_AP1_THROTTLE
-Text HLabel 1800 5300 0    60   Output ~ 0
+Text HLabel 5550 6850 0    60   Output ~ 0
 B_AP2_THROTTLE
-Wire Wire Line
-	4950 5350 3550 5350
-Text HLabel 3550 5350 0    60   Input ~ 0
+Text HLabel 5550 4850 0    60   Input ~ 0
 BRAKE1_TEMP
-Wire Wire Line
-	4950 5450 3550 5450
-Text HLabel 3550 5450 0    60   Input ~ 0
+Text HLabel 5550 4950 0    60   Input ~ 0
 BRAKE2_TEMP
-Wire Wire Line
-	4950 5550 3550 5550
-Text HLabel 3550 5550 0    60   Input ~ 0
+Text HLabel 5550 5050 0    60   Input ~ 0
 GIMBAL1_TEMP
-Wire Wire Line
-	4950 5650 3550 5650
-Text HLabel 3550 5650 0    60   Input ~ 0
+Text HLabel 5550 5150 0    60   Input ~ 0
 GIMBAL2_TEMP
-Wire Wire Line
-	4950 5750 3550 5750
-Text HLabel 3550 5750 0    60   Input ~ 0
+Text HLabel 5550 5250 0    60   Input ~ 0
 GIMBAL3_TEMP
-Wire Wire Line
-	4950 5850 3550 5850
-Text HLabel 3550 5850 0    60   Input ~ 0
+Text HLabel 5550 5350 0    60   Input ~ 0
 GIMBAL4_TEMP
+$Comp
+L AMC7812 U?
+U 1 1 57565802
+P 7150 7500
+F 0 "U?" H 9400 11750 60  0000 C CNN
+F 1 "AMC7812" H 9250 7450 60  0000 C CNN
+F 2 "" H 8450 10200 60  0000 C CNN
+F 3 "" H 8450 10200 60  0000 C CNN
+	1    7150 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5050 10750 5050
+Wire Wire Line
+	9650 5150 10750 5150
+$Comp
+L GNDD #PWR?
+U 1 1 5756580D
+P 9950 5650
+F 0 "#PWR?" H 9950 5400 50  0001 C CNN
+F 1 "GNDD" H 9950 5500 50  0000 C CNN
+F 2 "" H 9950 5650 50  0000 C CNN
+F 3 "" H 9950 5650 50  0000 C CNN
+	1    9950 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4000 10750 4000
+Wire Wire Line
+	9650 4100 10750 4100
+Wire Wire Line
+	9650 3700 10750 3700
+Wire Wire Line
+	10750 3800 9650 3800
+Wire Wire Line
+	10750 4200 9650 4200
+Wire Wire Line
+	6950 4250 5550 4250
+Wire Wire Line
+	5550 4350 6950 4350
+Wire Wire Line
+	6950 4450 5550 4450
+Wire Wire Line
+	5550 4550 6950 4550
+Wire Wire Line
+	6950 4650 5550 4650
+Wire Wire Line
+	6950 4750 5550 4750
+Wire Wire Line
+	6950 5950 5550 5950
+Wire Wire Line
+	6950 6050 5550 6050
+Wire Wire Line
+	6950 6150 5550 6150
+Wire Wire Line
+	6950 6250 5550 6250
+Wire Wire Line
+	6950 6350 5550 6350
+Wire Wire Line
+	6950 6450 5550 6450
+Wire Wire Line
+	6950 6550 5550 6550
+Wire Wire Line
+	6950 6650 5550 6650
+Wire Wire Line
+	6950 4850 5550 4850
+Wire Wire Line
+	6950 4950 5550 4950
+Wire Wire Line
+	6950 5050 5550 5050
+Wire Wire Line
+	6950 5150 5550 5150
+Wire Wire Line
+	6950 5250 5550 5250
+Wire Wire Line
+	6950 5350 5550 5350
+Wire Wire Line
+	6950 6750 5550 6750
+Wire Wire Line
+	5550 6850 6950 6850
+Text Notes 9600 4400 0    60   ~ 0
+Consider alarm on LED
+Text Notes 9600 4500 0    60   ~ 0
+Alarm could be used for MLP out of range.
+$Comp
+L R R?
+U 1 1 57565830
+P 9950 3150
+F 0 "R?" V 10030 3150 50  0000 C CNN
+F 1 "10K" V 9950 3150 50  0000 C CNN
+F 2 "" V 9880 3150 50  0000 C CNN
+F 3 "" H 9950 3150 50  0000 C CNN
+	1    9950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3300 9950 4100
+Connection ~ 9950 4100
+Wire Wire Line
+	9650 5250 9950 5250
+Wire Wire Line
+	9950 5250 9950 5650
+Wire Wire Line
+	9650 5350 9950 5350
+Connection ~ 9950 5350
+Wire Wire Line
+	9650 5450 9950 5450
+Connection ~ 9950 5450
+Wire Wire Line
+	9650 5550 9950 5550
+Connection ~ 9950 5550
+Text Notes 10050 5550 0    60   ~ 0
+I2C Addx = 0xC2,0xC3
+$Comp
+L GNDD #PWR?
+U 1 1 57565842
+P 8650 7800
+F 0 "#PWR?" H 8650 7550 50  0001 C CNN
+F 1 "GNDD" H 8650 7650 50  0000 C CNN
+F 2 "" H 8650 7800 50  0000 C CNN
+F 3 "" H 8650 7800 50  0000 C CNN
+	1    8650 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 7700 8650 7700
+Wire Wire Line
+	8650 7700 8650 7800
+$Comp
+L C C?
+U 1 1 5756584A
+P 6450 3950
+F 0 "C?" H 6475 4050 50  0000 L CNN
+F 1 "4.7UF" H 6475 3850 50  0000 L CNN
+F 2 "" H 6488 3800 50  0000 C CNN
+F 3 "" H 6450 3950 50  0000 C CNN
+	1    6450 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3950 6950 3950
+$Comp
+L GNDA #PWR?
+U 1 1 57565852
+P 8350 7800
+F 0 "#PWR?" H 8350 7550 50  0001 C CNN
+F 1 "GNDA" H 8350 7650 50  0000 C CNN
+F 2 "" H 8350 7800 50  0000 C CNN
+F 3 "" H 8350 7800 50  0000 C CNN
+	1    8350 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 57565858
+P 6950 4050
+F 0 "#PWR?" H 6950 3800 50  0001 C CNN
+F 1 "GNDA" H 6950 3900 50  0000 C CNN
+F 2 "" H 6950 4050 50  0000 C CNN
+F 3 "" H 6950 4050 50  0000 C CNN
+	1    6950 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 7700 8350 7700
+Wire Wire Line
+	8350 7700 8350 7800
+$Comp
+L +5VA #PWR?
+U 1 1 57565860
+P 8300 2950
+F 0 "#PWR?" H 8300 2800 50  0001 C CNN
+F 1 "+5VA" H 8300 3090 50  0000 C CNN
+F 2 "" H 8300 2950 50  0000 C CNN
+F 3 "" H 8300 2950 50  0000 C CNN
+	1    8300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2950 8300 3100
+Wire Wire Line
+	8300 3100 7900 3100
+$Comp
+L +3.3V #PWR?
+U 1 1 57565868
+P 8700 2950
+F 0 "#PWR?" H 8700 2800 50  0001 C CNN
+F 1 "+3.3V" H 8700 3090 50  0000 C CNN
+F 2 "" H 8700 2950 50  0000 C CNN
+F 3 "" H 8700 2950 50  0000 C CNN
+	1    8700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2950 8700 3100
+Wire Wire Line
+	8700 3100 8500 3100
+$Comp
+L +3.3V #PWR?
+U 1 1 57565870
+P 9950 3000
+F 0 "#PWR?" H 9950 2850 50  0001 C CNN
+F 1 "+3.3V" H 9950 3140 50  0000 C CNN
+F 2 "" H 9950 3000 50  0000 C CNN
+F 3 "" H 9950 3000 50  0000 C CNN
+	1    9950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 57565876
+P 6300 3950
+F 0 "#PWR?" H 6300 3700 50  0001 C CNN
+F 1 "GNDA" H 6300 3800 50  0000 C CNN
+F 2 "" H 6300 3950 50  0000 C CNN
+F 3 "" H 6300 3950 50  0000 C CNN
+	1    6300 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 7350 6650 7350
+Wire Wire Line
+	6650 7350 6650 7250
+Wire Wire Line
+	6650 7250 6950 7250
+Text Notes 6300 7600 0    60   ~ 0
+Using Internal\nReference
+Text Notes 9550 6850 0    60   ~ 0
+Could put an LED on this for debug
+$Comp
+L C C?
+U 1 1 57565881
+P 6200 2050
+F 0 "C?" H 6225 2150 50  0000 L CNN
+F 1 "0.1uF" H 6225 1950 50  0000 L CNN
+F 2 "" H 6238 1900 50  0000 C CNN
+F 3 "" H 6200 2050 50  0000 C CNN
+	1    6200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 57565888
+P 6200 1900
+F 0 "#PWR?" H 6200 1750 50  0001 C CNN
+F 1 "+5VA" H 6200 2040 50  0000 C CNN
+F 2 "" H 6200 1900 50  0000 C CNN
+F 3 "" H 6200 1900 50  0000 C CNN
+	1    6200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5756588E
+P 6200 2200
+F 0 "#PWR?" H 6200 1950 50  0001 C CNN
+F 1 "GNDA" H 6200 2050 50  0000 C CNN
+F 2 "" H 6200 2200 50  0000 C CNN
+F 3 "" H 6200 2200 50  0000 C CNN
+	1    6200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57565894
+P 6600 2050
+F 0 "C?" H 6625 2150 50  0000 L CNN
+F 1 "0.1uF" H 6625 1950 50  0000 L CNN
+F 2 "" H 6638 1900 50  0000 C CNN
+F 3 "" H 6600 2050 50  0000 C CNN
+	1    6600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 5756589B
+P 6600 1900
+F 0 "#PWR?" H 6600 1750 50  0001 C CNN
+F 1 "+5VA" H 6600 2040 50  0000 C CNN
+F 2 "" H 6600 1900 50  0000 C CNN
+F 3 "" H 6600 1900 50  0000 C CNN
+	1    6600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 575658A1
+P 6600 2200
+F 0 "#PWR?" H 6600 1950 50  0001 C CNN
+F 1 "GNDA" H 6600 2050 50  0000 C CNN
+F 2 "" H 6600 2200 50  0000 C CNN
+F 3 "" H 6600 2200 50  0000 C CNN
+	1    6600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 575658A7
+P 6950 2050
+F 0 "C?" H 6975 2150 50  0000 L CNN
+F 1 "0.1uF" H 6975 1950 50  0000 L CNN
+F 2 "" H 6988 1900 50  0000 C CNN
+F 3 "" H 6950 2050 50  0000 C CNN
+	1    6950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 575658AE
+P 6950 1900
+F 0 "#PWR?" H 6950 1750 50  0001 C CNN
+F 1 "+5VA" H 6950 2040 50  0000 C CNN
+F 2 "" H 6950 1900 50  0000 C CNN
+F 3 "" H 6950 1900 50  0000 C CNN
+	1    6950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 575658B4
+P 6950 2200
+F 0 "#PWR?" H 6950 1950 50  0001 C CNN
+F 1 "GNDA" H 6950 2050 50  0000 C CNN
+F 2 "" H 6950 2200 50  0000 C CNN
+F 3 "" H 6950 2200 50  0000 C CNN
+	1    6950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 575658BA
+P 7350 2050
+F 0 "C?" H 7375 2150 50  0000 L CNN
+F 1 "0.1uF" H 7375 1950 50  0000 L CNN
+F 2 "" H 7388 1900 50  0000 C CNN
+F 3 "" H 7350 2050 50  0000 C CNN
+	1    7350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 575658C1
+P 7350 1900
+F 0 "#PWR?" H 7350 1750 50  0001 C CNN
+F 1 "+5VA" H 7350 2040 50  0000 C CNN
+F 2 "" H 7350 1900 50  0000 C CNN
+F 3 "" H 7350 1900 50  0000 C CNN
+	1    7350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 575658C7
+P 7350 2200
+F 0 "#PWR?" H 7350 1950 50  0001 C CNN
+F 1 "GNDA" H 7350 2050 50  0000 C CNN
+F 2 "" H 7350 2200 50  0000 C CNN
+F 3 "" H 7350 2200 50  0000 C CNN
+	1    7350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 575658CD
+P 7850 2050
+F 0 "C?" H 7875 2150 50  0000 L CNN
+F 1 "0.1uF" H 7875 1950 50  0000 L CNN
+F 2 "" H 7888 1900 50  0000 C CNN
+F 3 "" H 7850 2050 50  0000 C CNN
+	1    7850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 575658D4
+P 7850 1900
+F 0 "#PWR?" H 7850 1750 50  0001 C CNN
+F 1 "+3.3V" H 7850 2040 50  0000 C CNN
+F 2 "" H 7850 1900 50  0000 C CNN
+F 3 "" H 7850 1900 50  0000 C CNN
+	1    7850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 575658DA
+P 7850 2200
+F 0 "#PWR?" H 7850 1950 50  0001 C CNN
+F 1 "GNDD" H 7850 2050 50  0000 C CNN
+F 2 "" H 7850 2200 50  0000 C CNN
+F 3 "" H 7850 2200 50  0000 C CNN
+	1    7850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 575658E0
+P 8200 2050
+F 0 "C?" H 8225 2150 50  0000 L CNN
+F 1 "0.1uF" H 8225 1950 50  0000 L CNN
+F 2 "" H 8238 1900 50  0000 C CNN
+F 3 "" H 8200 2050 50  0000 C CNN
+	1    8200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 575658E7
+P 8200 1900
+F 0 "#PWR?" H 8200 1750 50  0001 C CNN
+F 1 "+3.3V" H 8200 2040 50  0000 C CNN
+F 2 "" H 8200 1900 50  0000 C CNN
+F 3 "" H 8200 1900 50  0000 C CNN
+	1    8200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 575658ED
+P 8200 2200
+F 0 "#PWR?" H 8200 1950 50  0001 C CNN
+F 1 "GNDD" H 8200 2050 50  0000 C CNN
+F 2 "" H 8200 2200 50  0000 C CNN
+F 3 "" H 8200 2200 50  0000 C CNN
+	1    8200 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

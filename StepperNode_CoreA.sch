@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:rloopStepperNode-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -48,7 +49,7 @@ rLoop - Stepper Node\nCore Interface - Channel A
 Text Notes 11950 10500 0    60   ~ 0
 Original Author: SafetyLok
 $Comp
-L NODE_CORE_CONNECTOR A?
+L NODE_CORE_CONNECTOR-RESCUE-rloopStepperNode A?
 U 1 1 57538837
 P 8150 4600
 F 0 "A?" H 8600 6000 60  0000 C CNN
