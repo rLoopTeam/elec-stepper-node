@@ -235,4 +235,8 @@ Wire Wire Line
 	7400 5300 6200 5300
 Wire Wire Line
 	7400 5400 6200 5400
+Text HLabel 10100 3800 2    60   Input ~ 0
+BRAKE1_MLP_3V
+Text HLabel 10100 3900 2    60   Input ~ 0
+BRAKE2_MLP_3V
 $EndSCHEMATC

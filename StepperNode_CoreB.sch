@@ -235,4 +235,8 @@ Text Notes 11900 10350 0    118  ~ 0
 rLoop - Stepper Node\nCore Interface - Channel B\n
 Text Notes 11950 10500 0    60   ~ 0
 Original Author: SafetyLok
+Text HLabel 10100 4200 2    60   Input ~ 0
+BRAKE1_MLP_3V
+Text HLabel 10100 4300 2    60   Input ~ 0
+BRAKE2_MLP_3V
 $EndSCHEMATC

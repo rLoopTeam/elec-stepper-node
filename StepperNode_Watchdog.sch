@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 12 15
+Sheet 7 15
 Title "Watchdog"
 Date ""
 Rev "1"
