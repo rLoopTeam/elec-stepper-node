@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 15
+Sheet 3 15
 Title "Throttle Multiplexers"
 Date ""
 Rev "1"
@@ -44,17 +44,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MAX4948 U?
-U 1 1 5753C2E3
-P 6700 3850
-F 0 "U?" H 7550 5700 60  0000 C CNN
-F 1 "MAX4948" H 7550 3800 60  0000 C CNN
-F 2 "" H 6700 4600 60  0000 C CNN
-F 3 "" H 6700 4600 60  0000 C CNN
-	1    6700 3850
-	1    0    0    -1  
-$EndComp
 Text Notes 11900 10350 0    118  ~ 0
 rLoop - Stepper Node\nThrottle Analog Multiplexers\n
 Text Notes 11950 10500 0    60   ~ 0
@@ -136,17 +125,6 @@ Text Label 10300 2650 0    60   ~ 0
 HE4_THROTTLE
 Text Notes 11750 3100 1    60   ~ 0
 Screened Cable with screen\nconnected to GND on PCB side\n1 Per LHS HE
-$Comp
-L MAX4948 U?
-U 1 1 5753D281
-P 6700 7350
-F 0 "U?" H 7550 9200 60  0000 C CNN
-F 1 "MAX4948" H 7550 7300 60  0000 C CNN
-F 2 "" H 6700 8100 60  0000 C CNN
-F 3 "" H 6700 8100 60  0000 C CNN
-	1    6700 7350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 5700 5750 5700
 Text HLabel 5750 5800 0    60   Input ~ 0
@@ -238,17 +216,6 @@ F 3 "" H 7250 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
-U 1 1 57569509
-P 7650 1300
-F 0 "C?" H 7675 1400 50  0000 L CNN
-F 1 "0.1UF" H 7675 1200 50  0000 L CNN
-F 2 "" H 7688 1150 50  0000 C CNN
-F 3 "" H 7650 1300 50  0000 C CNN
-	1    7650 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L +5VA #PWR?
 U 1 1 57569510
 P 7650 1150
@@ -275,7 +242,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 1500 6150 1500
 Text Notes 5400 1400 0    60   ~ 0
-High = CHA
+High = NO Channel
 $Comp
 L GNDA #PWR?
 U 1 1 5756951F
@@ -296,17 +263,6 @@ F 1 "+5VA" H 7250 5490 50  0000 C CNN
 F 2 "" H 7250 5350 50  0000 C CNN
 F 3 "" H 7250 5350 50  0000 C CNN
 	1    7250 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 57569696
-P 7650 4800
-F 0 "C?" H 7675 4900 50  0000 L CNN
-F 1 "0.1UF" H 7675 4700 50  0000 L CNN
-F 2 "" H 7688 4650 50  0000 C CNN
-F 3 "" H 7650 4800 50  0000 C CNN
-	1    7650 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -335,8 +291,6 @@ Wire Wire Line
 	7150 5350 7150 5000
 Wire Wire Line
 	7150 5000 6150 5000
-Text Notes 5400 4900 0    60   ~ 0
-High = CHA
 $Comp
 L GNDA #PWR?
 U 1 1 575696AC
@@ -400,4 +354,48 @@ Wire Wire Line
 Connection ~ 7000 4200
 Text Notes 13100 1300 0    60   ~ 0
 Notes on HE throttle interface:\n1. We need to maintain electrical isolation (GND/SIG)\n2. We need to supply +12V (Fused) for the electronics to run\n3. We need RS485 comms\n4. Fwd/Rev? How? - Swap Phase A and C or set motor features to 0x01 to swap\n
+$Comp
+L MAX4948ETG+ U?
+U 1 1 575A07D6
+P 6700 2050
+F 0 "U?" H 7550 2100 60  0000 C CNN
+F 1 "MAX4948ETG+" H 7750 200 60  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_QFN24_4x4mm" H 6700 1000 60  0001 C CNN
+F 3 "" H 6700 1000 60  0000 C CNN
+	1    6700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX4948ETG+ U?
+U 1 1 575A08CC
+P 6700 5550
+F 0 "U?" H 7550 5600 60  0000 C CNN
+F 1 "MAX4948ETG+" H 7750 3700 60  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_QFN24_4x4mm" H 6700 4500 60  0001 C CNN
+F 3 "" H 6700 4500 60  0000 C CNN
+	1    6700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575A2190
+P 7650 1300
+F 0 "C?" H 7675 1400 50  0000 L CNN
+F 1 "C_100nF_50V" H 7675 1200 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 7688 1150 50  0001 C CNN
+F 3 "" H 7650 1300 50  0000 C CNN
+	1    7650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575A22FF
+P 7650 4800
+F 0 "C?" H 7675 4900 50  0000 L CNN
+F 1 "C_100nF_50V" H 7675 4700 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 7688 4650 50  0001 C CNN
+F 3 "" H 7650 4800 50  0000 C CNN
+	1    7650 4800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

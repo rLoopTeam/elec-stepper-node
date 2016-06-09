@@ -569,20 +569,20 @@ Wire Wire Line
 Text Label 2200 9450 0    60   ~ 0
 CHB_SPI_SCK
 $Sheet
-S 5100 9750 900  300 
+S 6350 2250 900  300 
 U 57538173
 F0 "Sheet_Brake_420ma" 60
 F1 "StepperNode_Brake420ma.sch" 60
-F2 "BRAKE1_MLP" O R 6000 9850 60 
-F3 "BRAKE2_MLP" O R 6000 9950 60 
+F2 "BRAKE1_MLP" O R 7250 2350 60 
+F3 "BRAKE2_MLP" O R 7250 2450 60 
 $EndSheet
 Wire Wire Line
-	6000 9850 7000 9850
-Text Label 6150 9850 0    60   ~ 0
+	7250 2350 8250 2350
+Text Label 7400 2350 0    60   ~ 0
 BRAKE1_MLP
 Wire Wire Line
-	6000 9950 7000 9950
-Text Label 6150 9950 0    60   ~ 0
+	7250 2450 8250 2450
+Text Label 7400 2450 0    60   ~ 0
 BRAKE2_MLP
 Wire Wire Line
 	5550 4850 6550 4850
@@ -972,4 +972,6 @@ F25 "PUSH_INTLK_B" I R 2100 9800 60
 F26 "CHB_ACCEL1_NINT" I R 2100 10000 60 
 F27 "CHB_ACCEL2_NINT" I R 2100 10100 60 
 $EndSheet
+Text Notes 3700 10650 0    118  ~ 0
+MAJOR CHALLENGES:\n1. Power Muxes from a redundant source\n2. Prevent parasitic powering of a failed nodes DC bus
 $EndSCHEMATC
