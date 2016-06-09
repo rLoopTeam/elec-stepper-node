@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 17
+Sheet 4 15
 Title "Stepper Node - Core A"
 Date ""
 Rev "1"
@@ -69,30 +69,14 @@ Text HLabel 6200 5100 0    60   Input ~ 0
 CHA_DAC_NDATA_AVAIL
 Text HLabel 10100 5700 2    60   Output ~ 0
 CHA_DAC_NCNVT
-Text HLabel 10100 3800 2    60   Output ~ 0
-CHA_STEP1_DIR
-Text HLabel 10100 3900 2    60   Output ~ 0
-CHA_STEP1_STEP
-Text HLabel 10100 4000 2    60   Output ~ 0
-CHA_STEP2_DIR
-Text HLabel 10100 4100 2    60   Output ~ 0
-CHA_STEP2_STEP
-Text HLabel 10100 4200 2    60   Output ~ 0
-CHA_STEP3_DIR
-Text HLabel 10100 4300 2    60   Output ~ 0
-CHA_STEP3_STEP
-Text HLabel 10100 4400 2    60   Output ~ 0
-CHA_STEP4_DIR
-Text HLabel 10100 4500 2    60   Output ~ 0
-CHA_STEP4_STEP
 Text HLabel 10100 4600 2    60   Output ~ 0
-CHA_STEP5_DIR
+CHA_BRAKE1_DIR
 Text HLabel 10100 4700 2    60   Output ~ 0
-CHA_STEP5_STEP
+CHA_BRAKE1_STEP
 Text HLabel 10100 4800 2    60   Output ~ 0
-CHA_STEP6_DIR
+CHA_BRAKE2_DIR
 Text HLabel 10100 4900 2    60   Output ~ 0
-CHA_STEP6_STEP
+CHA_BRAKE2_STEP
 Text HLabel 10100 5000 2    60   Output ~ 0
 CHA_WDT_PULSE
 Text HLabel 10100 5100 2    60   Input ~ 0

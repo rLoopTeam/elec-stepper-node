@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 17
+Sheet 16 15
 Title "DAC Channel B"
 Date ""
 Rev "1"
@@ -48,14 +48,6 @@ Text HLabel 5550 4250 0    60   Output ~ 0
 BRAKE1_MLP
 Text HLabel 5550 4350 0    60   Output ~ 0
 BRAKE2_MLP
-Text HLabel 5550 4450 0    60   Input ~ 0
-GIMBAL1_MLP
-Text HLabel 5550 4550 0    60   Input ~ 0
-GIMBAL2_MLP
-Text HLabel 5550 4650 0    60   Input ~ 0
-GIMBAL3_MLP
-Text HLabel 5550 4750 0    60   Input ~ 0
-GIMBAL4_MLP
 Text HLabel 5550 5950 0    60   Output ~ 0
 B_HE1_THROTTLE
 Text HLabel 5550 6050 0    60   Output ~ 0
@@ -94,18 +86,10 @@ Text HLabel 5550 6750 0    60   Output ~ 0
 B_AP1_THROTTLE
 Text HLabel 5550 6850 0    60   Output ~ 0
 B_AP2_THROTTLE
-Text HLabel 5550 4850 0    60   Input ~ 0
+Text HLabel 5550 4450 0    60   Input ~ 0
 BRAKE1_TEMP
-Text HLabel 5550 4950 0    60   Input ~ 0
+Text HLabel 5550 4550 0    60   Input ~ 0
 BRAKE2_TEMP
-Text HLabel 5550 5050 0    60   Input ~ 0
-GIMBAL1_TEMP
-Text HLabel 5550 5150 0    60   Input ~ 0
-GIMBAL2_TEMP
-Text HLabel 5550 5250 0    60   Input ~ 0
-GIMBAL3_TEMP
-Text HLabel 5550 5350 0    60   Input ~ 0
-GIMBAL4_TEMP
 $Comp
 L AMC7812 U?
 U 1 1 57565802
@@ -151,10 +135,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 4550 6950 4550
 Wire Wire Line
-	6950 4650 5550 4650
-Wire Wire Line
-	6950 4750 5550 4750
-Wire Wire Line
 	6950 5950 5550 5950
 Wire Wire Line
 	6950 6050 5550 6050
@@ -170,18 +150,6 @@ Wire Wire Line
 	6950 6550 5550 6550
 Wire Wire Line
 	6950 6650 5550 6650
-Wire Wire Line
-	6950 4850 5550 4850
-Wire Wire Line
-	6950 4950 5550 4950
-Wire Wire Line
-	6950 5050 5550 5050
-Wire Wire Line
-	6950 5150 5550 5150
-Wire Wire Line
-	6950 5250 5550 5250
-Wire Wire Line
-	6950 5350 5550 5350
 Wire Wire Line
 	6950 6750 5550 6750
 Wire Wire Line

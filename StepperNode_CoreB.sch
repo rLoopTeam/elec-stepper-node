@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 17
+Sheet 15 15
 Title "Core Interface - Channel B"
 Date ""
 Rev "1"
@@ -65,30 +65,14 @@ Text HLabel 6200 5500 0    60   Input ~ 0
 CHB_DAC_NDATA_AVAIL
 Text HLabel 10100 6100 2    60   Output ~ 0
 CHB_DAC_NCNVT
-Text HLabel 10100 4200 2    60   Output ~ 0
-CHB_STEP1_DIR
-Text HLabel 10100 4300 2    60   Output ~ 0
-CHB_STEP1_STEP
-Text HLabel 10100 4400 2    60   Output ~ 0
-CHB_STEP2_DIR
-Text HLabel 10100 4500 2    60   Output ~ 0
-CHB_STEP2_STEP
-Text HLabel 10100 4600 2    60   Output ~ 0
-CHB_STEP3_DIR
-Text HLabel 10100 4700 2    60   Output ~ 0
-CHB_STEP3_STEP
-Text HLabel 10100 4800 2    60   Output ~ 0
-CHB_STEP4_DIR
-Text HLabel 10100 4900 2    60   Output ~ 0
-CHB_STEP4_STEP
 Text HLabel 10100 5000 2    60   Output ~ 0
-CHB_STEP5_DIR
+CHB_BRAKE1_DIR
 Text HLabel 10100 5100 2    60   Output ~ 0
-CHB_STEP5_STEP
+CHB_BRAKE1_STEP
 Text HLabel 10100 5200 2    60   Output ~ 0
-CHB_STEP6_DIR
+CHB_BRAKE2_DIR
 Text HLabel 10100 5300 2    60   Output ~ 0
-CHB_STEP6_STEP
+CHB_BRAKE2_STEP
 Text HLabel 10100 5400 2    60   Output ~ 0
 CHB_WDT_PULSE
 Text HLabel 10100 5500 2    60   Input ~ 0

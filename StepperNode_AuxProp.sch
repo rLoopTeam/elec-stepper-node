@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 15 17
+Sheet 15 15
 Title "Aux Propulsion Interface"
 Date ""
 Rev "1"

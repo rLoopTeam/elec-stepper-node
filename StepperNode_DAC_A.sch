@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 17
+Sheet 17 15
 Title "DAC Channel A"
 Date ""
 Rev "1"
@@ -114,18 +114,6 @@ Wire Wire Line
 	6450 3750 5050 3750
 Wire Wire Line
 	5050 3850 6450 3850
-Wire Wire Line
-	6450 3950 5050 3950
-Wire Wire Line
-	6450 4050 5050 4050
-Text HLabel 5050 3750 0    60   Input ~ 0
-GIMBAL1_MLP
-Text HLabel 5050 3850 0    60   Input ~ 0
-GIMBAL2_MLP
-Text HLabel 5050 3950 0    60   Input ~ 0
-GIMBAL3_MLP
-Text HLabel 5050 4050 0    60   Input ~ 0
-GIMBAL4_MLP
 Text HLabel 5050 5250 0    60   Output ~ 0
 A_HE1_THROTTLE
 Wire Wire Line
@@ -162,30 +150,8 @@ Text HLabel 5050 6050 0    60   Output ~ 0
 A_AP1_THROTTLE
 Text HLabel 5050 6150 0    60   Output ~ 0
 A_AP2_THROTTLE
-Wire Wire Line
-	6450 4150 5050 4150
-Text HLabel 5050 4150 0    60   Input ~ 0
-BRAKE1_TEMP
-Wire Wire Line
-	6450 4250 5050 4250
-Text HLabel 5050 4250 0    60   Input ~ 0
+Text HLabel 5050 3850 0    60   Input ~ 0
 BRAKE2_TEMP
-Wire Wire Line
-	6450 4350 5050 4350
-Text HLabel 5050 4350 0    60   Input ~ 0
-GIMBAL1_TEMP
-Wire Wire Line
-	6450 4450 5050 4450
-Text HLabel 5050 4450 0    60   Input ~ 0
-GIMBAL2_TEMP
-Wire Wire Line
-	6450 4550 5050 4550
-Text HLabel 5050 4550 0    60   Input ~ 0
-GIMBAL3_TEMP
-Wire Wire Line
-	6450 4650 5050 4650
-Text HLabel 5050 4650 0    60   Input ~ 0
-GIMBAL4_TEMP
 Wire Wire Line
 	6450 6050 5050 6050
 Wire Wire Line
@@ -537,4 +503,6 @@ F 3 "" H 7700 1500 50  0000 C CNN
 	1    7700 1500
 	1    0    0    -1  
 $EndComp
+Text HLabel 5050 3750 0    60   Input ~ 0
+BRAKE1_TEMP
 $EndSCHEMATC

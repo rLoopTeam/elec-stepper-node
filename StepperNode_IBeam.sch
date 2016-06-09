@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 15 17
+Sheet 14 15
 Title "I Beam Laterial (Yaw) Sensors"
 Date ""
 Rev "1"
@@ -111,4 +111,8 @@ Text HLabel 9250 3300 2    60   Output ~ 0
 CHB_SPI_MISO
 Text HLabel 9250 3400 2    60   Input ~ 0
 CHB_SPI_SCK
+Text Notes 11900 10350 0    118  ~ 0
+rLoop - Stepper Node\nI Beam Sensors\n
+Text Notes 11950 10500 0    60   ~ 0
+Original Author: SafetyLok
 $EndSCHEMATC
