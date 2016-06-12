@@ -46,8 +46,6 @@ Comment4 ""
 $EndDescr
 Text Notes 11950 10350 0    118  ~ 0
 rLoop - Stepper Node\nG210x Multiplexer Interface
-Text Notes 600  650  0    60   ~ 0
-The purpose of this block is to route 6 Step and 6 Direction signals from each of the two teensys and also buffer those signals.\n
 Text Notes 5000 3500 0    60   ~ 0
 At 5V, VinH = 2V\nSafe to interface with 3.3V
 Text Notes 12150 4950 0    60   ~ 0

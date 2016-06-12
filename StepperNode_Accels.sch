@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 6 15
 Title "Accelerometers"
 Date ""
-Rev "1"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -60,9 +60,9 @@ F 3 "" H 4950 1600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 1700 6800 1700
+	5900 1700 7900 1700
 Wire Wire Line
-	5900 1800 6800 1800
+	5900 1800 7900 1800
 Text Label 6050 1700 0    60   ~ 0
 CHA_I2C_SCL
 Text Label 6050 1800 0    60   ~ 0
@@ -106,9 +106,9 @@ F 3 "" H 4950 4500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 4600 6800 4600
+	5900 4600 7850 4600
 Wire Wire Line
-	5900 4700 6800 4700
+	5900 4700 7850 4700
 Text Label 6050 4600 0    60   ~ 0
 CHB_I2C_SCL
 Text Label 6050 4700 0    60   ~ 0
@@ -140,9 +140,9 @@ Wire Wire Line
 	5900 6450 7600 6450
 Text Label 5950 6450 0    60   ~ 0
 CHB_ACCEL2_NINT
-Text HLabel 6800 1700 2    60   Input ~ 0
+Text HLabel 7900 1700 2    60   Input ~ 0
 CHA_I2C_SCL
-Text HLabel 6800 1800 2    60   BiDi ~ 0
+Text HLabel 7900 1800 2    60   BiDi ~ 0
 CHA_I2C_SDA
 Text HLabel 7600 2150 2    60   Output ~ 0
 CHA_ACCEL1_NINT
@@ -174,9 +174,9 @@ F 3 "" H 5900 1900 50  0000 C CNN
 	1    5900 1900
 	0    -1   -1   0   
 $EndComp
-Text HLabel 6800 4600 2    60   Input ~ 0
+Text HLabel 7850 4600 2    60   Input ~ 0
 CHB_I2C_SCL
-Text HLabel 6800 4700 2    60   BiDi ~ 0
+Text HLabel 7850 4700 2    60   BiDi ~ 0
 CHB_I2C_SDA
 $Comp
 L +3V3_A #PWR72
@@ -832,6 +832,88 @@ F 1 "10K" V 7250 6300 50  0000 C CNN
 F 2 "RLOOP_FOOTPRINTS:rLoop_R_0603" V 7180 6300 50  0001 C CNN
 F 3 "" H 7250 6300 50  0000 C CNN
 	1    7250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.7K R?
+U 1 1 575CC544
+P 6950 1350
+F 0 "R?" V 7030 1350 50  0000 C CNN
+F 1 "4.7K" V 6950 1350 50  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_R_0603" V 6880 1350 50  0001 C CNN
+F 3 "" H 6950 1350 50  0000 C CNN
+	1    6950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.7K R?
+U 1 1 575CC5B1
+P 7200 1350
+F 0 "R?" V 7280 1350 50  0000 C CNN
+F 1 "4.7K" V 7200 1350 50  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_R_0603" V 7130 1350 50  0001 C CNN
+F 3 "" H 7200 1350 50  0000 C CNN
+	1    7200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3_A #PWR?
+U 1 1 575CC5CD
+P 6950 1200
+F 0 "#PWR?" H 6950 1050 50  0001 C CNN
+F 1 "+3V3_A" H 6950 1340 50  0000 C CNN
+F 2 "" H 6950 1200 60  0000 C CNN
+F 3 "" H 6950 1200 60  0000 C CNN
+	1    6950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1200 7200 1200
+Wire Wire Line
+	6950 1500 6950 1700
+Connection ~ 6950 1700
+Wire Wire Line
+	7200 1500 7200 1800
+Connection ~ 7200 1800
+$Comp
+L 4.7K R?
+U 1 1 575CC8DB
+P 7250 4250
+F 0 "R?" V 7330 4250 50  0000 C CNN
+F 1 "4.7K" V 7250 4250 50  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_R_0603" V 7180 4250 50  0001 C CNN
+F 3 "" H 7250 4250 50  0000 C CNN
+	1    7250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.7K R?
+U 1 1 575CC8E1
+P 7500 4250
+F 0 "R?" V 7580 4250 50  0000 C CNN
+F 1 "4.7K" V 7500 4250 50  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_R_0603" V 7430 4250 50  0001 C CNN
+F 3 "" H 7500 4250 50  0000 C CNN
+	1    7500 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4100 7500 4100
+Wire Wire Line
+	7250 4400 7250 4600
+Connection ~ 7250 4600
+Wire Wire Line
+	7500 4400 7500 4700
+Connection ~ 7500 4700
+$Comp
+L +3V3_B #PWR?
+U 1 1 575CCA5D
+P 7250 4100
+F 0 "#PWR?" H 7250 3950 50  0001 C CNN
+F 1 "+3V3_B" H 7250 4240 50  0000 C CNN
+F 2 "" H 7250 4100 60  0000 C CNN
+F 3 "" H 7250 4100 60  0000 C CNN
+	1    7250 4100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

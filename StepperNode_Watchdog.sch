@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 7 15
 Title "Watchdog"
 Date ""
-Rev "1"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -74,8 +74,8 @@ Text HLabel 10600 5150 2    60   Output ~ 0
 WDT_GOOD
 Text Label 9850 5150 0    60   ~ 0
 WDT_GOOD
-Text Notes 10000 5400 0    60   ~ 0
-Active High when\nBoth watchdogs are good
+Text Notes 10000 5600 0    60   ~ 0
+Active High when either watchdog is good.\nThis signal then ensure the G210X enable circuits are kept closed except in\nthe case of a dual channel failure, where failsafe braking is required.
 Text Notes 5750 6600 0    60   ~ 0
 Todo:\nJumper Pin to simulate failures.
 Wire Wire Line
@@ -315,5 +315,104 @@ F 2 "" H 5800 6000 60  0000 C CNN
 F 3 "" H 5800 6000 60  0000 C CNN
 	1    5800 6000
 	0    -1   -1   0   
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575CF20D
+P 4150 4950
+F 0 "C?" H 4175 5050 50  0000 L CNN
+F 1 "C_100nF_50V" H 4175 4850 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 4188 4800 50  0001 C CNN
+F 3 "" H 4150 4950 50  0000 C CNN
+	1    4150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3_A #PWR?
+U 1 1 575CF256
+P 4150 4800
+F 0 "#PWR?" H 4150 4650 50  0001 C CNN
+F 1 "+3V3_A" H 4150 4940 50  0000 C CNN
+F 2 "" H 4150 4800 60  0000 C CNN
+F 3 "" H 4150 4800 60  0000 C CNN
+	1    4150 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 575CF268
+P 4150 5100
+F 0 "#PWR?" H 4150 4850 50  0001 C CNN
+F 1 "GNDD" H 4150 4950 50  0000 C CNN
+F 2 "" H 4150 5100 50  0000 C CNN
+F 3 "" H 4150 5100 50  0000 C CNN
+	1    4150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575CF2F4
+P 4150 6050
+F 0 "C?" H 4175 6150 50  0000 L CNN
+F 1 "C_100nF_50V" H 4175 5950 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 4188 5900 50  0001 C CNN
+F 3 "" H 4150 6050 50  0000 C CNN
+	1    4150 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 575CF2FA
+P 4150 6200
+F 0 "#PWR?" H 4150 5950 50  0001 C CNN
+F 1 "GNDD" H 4150 6050 50  0000 C CNN
+F 2 "" H 4150 6200 50  0000 C CNN
+F 3 "" H 4150 6200 50  0000 C CNN
+	1    4150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3_B #PWR?
+U 1 1 575CF30D
+P 4150 5900
+F 0 "#PWR?" H 4150 5750 50  0001 C CNN
+F 1 "+3V3_B" H 4150 6040 50  0000 C CNN
+F 2 "" H 4150 5900 60  0000 C CNN
+F 3 "" H 4150 5900 60  0000 C CNN
+	1    4150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575CF5E2
+P 9500 6200
+F 0 "C?" H 9525 6300 50  0000 L CNN
+F 1 "C_100nF_50V" H 9525 6100 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 9538 6050 50  0001 C CNN
+F 3 "" H 9500 6200 50  0000 C CNN
+	1    9500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3_A #PWR?
+U 1 1 575CF5E8
+P 9500 6050
+F 0 "#PWR?" H 9500 5900 50  0001 C CNN
+F 1 "+3V3_A" H 9500 6190 50  0000 C CNN
+F 2 "" H 9500 6050 60  0000 C CNN
+F 3 "" H 9500 6050 60  0000 C CNN
+	1    9500 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 575CF5EE
+P 9500 6350
+F 0 "#PWR?" H 9500 6100 50  0001 C CNN
+F 1 "GNDD" H 9500 6200 50  0000 C CNN
+F 2 "" H 9500 6350 50  0000 C CNN
+F 3 "" H 9500 6350 50  0000 C CNN
+	1    9500 6350
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 3 15
 Title "Throttle Multiplexers"
 Date ""
-Rev "1"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -398,4 +398,52 @@ F 3 "" H 7250 5350 60  0000 C CNN
 	1    7250 5350
 	1    0    0    -1  
 $EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 575D0F3B
+P 10950 6350
+F 0 "#PWR?" H 10950 6100 50  0001 C CNN
+F 1 "GNDA" H 10950 6200 50  0000 C CNN
+F 2 "" H 10950 6350 50  0000 C CNN
+F 3 "" H 10950 6350 50  0000 C CNN
+	1    10950 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5650 10950 5650
+Wire Wire Line
+	10950 5650 10950 6350
+Wire Wire Line
+	11000 6250 10950 6250
+Connection ~ 10950 6250
+Wire Wire Line
+	11000 6050 10950 6050
+Connection ~ 10950 6050
+Wire Wire Line
+	11000 5850 10950 5850
+Connection ~ 10950 5850
+$Comp
+L GNDA #PWR?
+U 1 1 575D10B7
+P 10950 2850
+F 0 "#PWR?" H 10950 2600 50  0001 C CNN
+F 1 "GNDA" H 10950 2700 50  0000 C CNN
+F 2 "" H 10950 2850 50  0000 C CNN
+F 3 "" H 10950 2850 50  0000 C CNN
+	1    10950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 2150 10950 2850
+Wire Wire Line
+	11000 2150 10950 2150
+Wire Wire Line
+	11000 2350 10950 2350
+Connection ~ 10950 2350
+Wire Wire Line
+	11000 2550 10950 2550
+Connection ~ 10950 2550
+Wire Wire Line
+	11000 2750 10950 2750
+Connection ~ 10950 2750
 $EndSCHEMATC
