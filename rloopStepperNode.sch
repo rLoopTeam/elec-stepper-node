@@ -512,7 +512,7 @@ Wire Wire Line
 Text Label 7400 2450 0    60   ~ 0
 BRAKE2_MLP_3V
 Wire Wire Line
-	5550 5650 6550 5650
+	5650 5650 6550 5650
 Text Label 5700 5650 0    60   ~ 0
 STEP_DIR_CTRL
 Wire Wire Line
