@@ -59,16 +59,8 @@ F 3 "" H 8150 4600 60  0000 C CNN
 	1    8150 4600
 	1    0    0    -1  
 $EndComp
-Text HLabel 10100 5400 2    60   Output ~ 0
-CHA_NDSC_CLR_0
-Text HLabel 10100 5500 2    60   Output ~ 0
-CHA_NDAC_CLR_1
-Text HLabel 10100 5600 2    60   Output ~ 0
-CHA_DAC_NRST
 Text HLabel 6200 5500 0    60   Input ~ 0
 CHA_DAC_NDATA_AVAIL
-Text HLabel 10100 5700 2    60   Output ~ 0
-CHA_DAC_NCNVT
 Text HLabel 10100 4600 2    60   Output ~ 0
 CHA_BRAKE1_DIR
 Text HLabel 10100 4700 2    60   Output ~ 0
@@ -178,14 +170,6 @@ Wire Wire Line
 Wire Wire Line
 	10100 5000 8900 5000
 Wire Wire Line
-	10100 5500 8900 5500
-Wire Wire Line
-	10100 5600 8900 5600
-Wire Wire Line
-	10100 5700 8900 5700
-Wire Wire Line
-	10100 5400 8900 5400
-Wire Wire Line
 	7400 4900 6200 4900
 Wire Wire Line
 	7400 5000 6200 5000
@@ -230,10 +214,6 @@ Wire Wire Line
 	8250 6300 8250 6350
 NoConn ~ 8900 3600
 NoConn ~ 8900 3700
-NoConn ~ 8900 4000
-NoConn ~ 8900 4100
-NoConn ~ 8900 4200
-NoConn ~ 8900 4300
 NoConn ~ 8900 4400
 NoConn ~ 8900 4500
 NoConn ~ 8900 5300
@@ -247,4 +227,24 @@ NoConn ~ 7400 4100
 NoConn ~ 7400 4200
 NoConn ~ 7400 4300
 NoConn ~ 7400 5700
+Text HLabel 10100 4000 2    60   Output ~ 0
+CHA_NDSC_CLR_0
+Text HLabel 10100 4100 2    60   Output ~ 0
+CHA_NDAC_CLR_1
+Wire Wire Line
+	10100 4100 8900 4100
+Wire Wire Line
+	10100 4000 8900 4000
+Text HLabel 10100 4200 2    60   Output ~ 0
+CHA_DAC_NRST
+Text HLabel 10100 4300 2    60   Output ~ 0
+CHA_DAC_NCNVT
+Wire Wire Line
+	10100 4200 8900 4200
+Wire Wire Line
+	10100 4300 8900 4300
+NoConn ~ 8900 5400
+NoConn ~ 8900 5500
+NoConn ~ 8900 5600
+NoConn ~ 8900 5700
 $EndSCHEMATC
